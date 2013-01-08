@@ -1,6 +1,6 @@
 <map version="0.9.0">
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
-<node CREATED="1357668022532" ID="ID_31717721" MODIFIED="1357668041574" TEXT="Am&#xe9;lioration cours de Thermo">
+<node CREATED="1357668022532" ID="ID_31717721" MODIFIED="1357679055433" TEXT="Am&#xe9;lioration cours de Thermo">
 <node CREATED="1357668311242" ID="ID_994946494" MODIFIED="1357668323034" POSITION="left" TEXT="Validation du support">
 <node CREATED="1357668324852" ID="ID_1231925429" MODIFIED="1357668358449" TEXT="Orthographe/Grammaire"/>
 <node CREATED="1357668330553" ID="ID_1099899684" MODIFIED="1357668333696" TEXT="Equations"/>
@@ -10,6 +10,7 @@
 <node CREATED="1357668122814" ID="ID_1043938222" MODIFIED="1357668918412" POSITION="right" TEXT="Corrections LaTeX">
 <node CREATED="1357668141297" ID="ID_1907477656" MODIFIED="1357668229235" TEXT="Ajouter r&#xe9;f&#xe9;rence vers Table des mati&#xe8;res"/>
 <node CREATED="1357668230690" ID="ID_1011855435" MODIFIED="1357668261569" TEXT="R&#xe9;gulariser liens internes vers les sch&#xe9;mas"/>
+<node CREATED="1357679060838" ID="ID_917856128" MODIFIED="1357679074783" TEXT="Augmenter r&#xe9;solution sch&#xe9;mas"/>
 <node CREATED="1357668286010" ID="ID_250558364" MODIFIED="1357668292554" TEXT="Enlever les pages blanches"/>
 <node CREATED="1357664247990" ID="ID_444476395" MODIFIED="1357668170697" TEXT="Enlever codes obsol&#xe8;tes">
 <node CREATED="1357664317343" ID="ID_1794958454" MODIFIED="1357668211092" TEXT="eqnarray* =&gt; align*"/>
