@@ -1,0 +1,51 @@
+\chapter{Diffusion thermique}
+
+\section{Loi de Fourier}
+
+	\subsection{Introduction}
+	
+	\begin{itemize}
+		\item La chaleur va du chaud vers le froid.
+		\item Considérons une surface $S$ entre $t$ et $t + \d t$, un transfert thermique $ \delta Q$ a lieu.
+		\item On pose 
+			\[
+				\boxed{\delta Q = \Phi \d t}
+			\]
+			Où $\Phi = $ flux thermique à travers $S$
+	\end{itemize}
+	
+	\paragraph{N.B.}
+	\begin{itemize}
+		\item $\big[ \Phi\big] = J.s^{-1} = W$
+		\item Sur un mur, $\Phi$ est la puissance totale traversant le mur d'un point de vue macroscopique.
+		\item Au niveau microscopique, on définit $\vec{j_Q}$ tel que
+			\[
+				\boxed{\Phi = \iint_{P \in S} \vec{j_Q}(P) \d \vec{S_P}}
+			\]
+			Avec :
+			\begin{itemize}
+				\item $\vec{j_Q}= $ vecteur densité de courant de chaleur
+				\item $\big[ j_Q\big] = W m^{-2}= $ c'est une puissance surfacique.
+			\end{itemize}
+	\end{itemize}
+	
+	\subsection{Loi de Fourier}
+	
+	\paragraph{\'Enoncé} Au voisinage de l'équilibre ($\vec{\text{grad}} T$ pas trop grand), on a:
+	\[
+		\boxed{\vec{j_Q} = - \lambda \vec{\text{grad}} T}
+	\]
+	Avec :
+	\begin{itemize}
+		\item $ \vec{j_Q} $ en $Wm^{-2}$
+		\item $ \lambda $ en $W m^{-1} K^{-1} $
+		\item $T$ en $K$
+	\end{itemize}
+	
+	\paragraph{N.B.}
+	\begin{itemize}
+		\item $\lambda = $ conductivité du milieu
+			\subitem Si $ \lambda$ grand (ex: métaux), milieu bon conducteur thermique
+			\subitem $\lambda$ petit (ex: air, laine de verre, ...), milieu mauvais.
+
+	\end{itemize}

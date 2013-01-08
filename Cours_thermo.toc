@@ -1,0 +1,221 @@
+\select@language {french}
+\contentsline {chapter}{Pr\'eambule}{i}{chapter*.2}
+\contentsline {paragraph}{Origine de ce support de cours}{i}{section*.3}
+\contentsline {paragraph}{Gare aux erreurs}{i}{section*.4}
+\contentsline {paragraph}{Remerciements}{i}{section*.5}
+\contentsline {chapter}{\numberline {1}Bases de la thermodynamique}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Introduction}{1}{section.1.1}
+\contentsline {paragraph}{Exemple 1}{1}{section*.6}
+\contentsline {paragraph}{Exemple 2}{1}{section*.7}
+\contentsline {paragraph}{Exemple 3}{2}{section*.8}
+\contentsline {paragraph}{Exemple 4}{2}{section*.9}
+\contentsline {paragraph}{Exemple 5}{2}{section*.10}
+\contentsline {section}{\numberline {1.2}\'E{}tat de la mati\`ere}{2}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Le corps pur}{2}{subsection.1.2.1}
+\contentsline {paragraph}{D\'efinition}{2}{section*.11}
+\contentsline {paragraph}{Exemples}{2}{section*.12}
+\contentsline {subsection}{\numberline {1.2.2}Les diff\'erents \'etats d'un corps pur}{2}{subsection.1.2.2}
+\contentsline {subsubsection}{Phase solide}{2}{section*.13}
+\contentsline {subsubsection}{Phase liquide}{2}{section*.14}
+\contentsline {subsubsection}{Phase gazeuse}{3}{section*.15}
+\contentsline {subsection}{\numberline {1.2.3}L'\'etat condens\'e}{3}{subsection.1.2.3}
+\contentsline {paragraph}{D\'efinition}{3}{section*.16}
+\contentsline {paragraph}{N.B.}{3}{section*.17}
+\contentsline {paragraph}{Caract\'eristiques}{3}{section*.18}
+\contentsline {subsection}{\numberline {1.2.4}\'E{}tat fluide}{3}{subsection.1.2.4}
+\contentsline {paragraph}{D\'efinition}{3}{section*.19}
+\contentsline {paragraph}{N.B.}{3}{section*.20}
+\contentsline {paragraph}{Quantit\'e molaire}{3}{section*.21}
+\contentsline {section}{\numberline {1.3}\'E{}chelles d'\'etudes}{4}{section.1.3}
+\contentsline {section}{\numberline {1.4}Grandeurs thermodynamiques}{4}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}Vocabulaire}{4}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {1.4.2}\'E{}quilibre thermodynamique}{4}{subsection.1.4.2}
+\contentsline {paragraph}{D\'efinition}{4}{section*.22}
+\contentsline {paragraph}{Exemple}{4}{section*.23}
+\contentsline {paragraph}{Propri\'et\'e}{4}{section*.24}
+\contentsline {subsection}{\numberline {1.4.3}\'E{}quations d'\'etat}{5}{subsection.1.4.3}
+\contentsline {subsubsection}{Param\`etres d'\'etat}{5}{section*.25}
+\contentsline {paragraph}{D\'efinition}{5}{section*.26}
+\contentsline {subsubsection}{Grandeurs intensives et grandeurs extensives}{5}{section*.27}
+\contentsline {paragraph}{D\'efinition}{5}{section*.28}
+\contentsline {paragraph}{Exemples}{5}{section*.29}
+\contentsline {paragraph}{Astuce}{5}{section*.30}
+\contentsline {subsubsection}{Notion de phase}{5}{section*.31}
+\contentsline {paragraph}{D\'efinition}{5}{section*.32}
+\contentsline {paragraph}{Exemple 1}{5}{section*.33}
+\contentsline {paragraph}{Exemple 2}{5}{section*.34}
+\contentsline {paragraph}{D\'efinition}{5}{section*.35}
+\contentsline {paragraph}{Exemples}{7}{section*.36}
+\contentsline {section}{\numberline {1.5}Le gaz parfait}{7}{section.1.5}
+\contentsline {paragraph}{D\'efinition}{7}{section*.37}
+\contentsline {paragraph}{Am\'elioration du mod\`ele du gaz parfait}{7}{section*.38}
+\contentsline {section}{\numberline {1.6}Dilatation et compressibilit\'e d'un syst\`eme}{7}{section.1.6}
+\contentsline {paragraph}{N.B.}{7}{section*.39}
+\contentsline {paragraph}{Exemple}{8}{section*.40}
+\contentsline {chapter}{\numberline {2}\'El\'ements de statique des fluides}{9}{chapter.2}
+\contentsline {section}{\numberline {2.1}Introduction}{9}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}G\'en\'eralit\'es}{9}{subsection.2.1.1}
+\contentsline {paragraph}{\'Etat fluide}{9}{section*.41}
+\contentsline {paragraph}{Hypoth\`eses}{9}{section*.42}
+\contentsline {subsection}{\numberline {2.1.2}Pression dans un fluide}{9}{subsection.2.1.2}
+\contentsline {paragraph}{Dans un fluide parfait}{9}{section*.43}
+\contentsline {section}{\numberline {2.2}Relation fondamentale de la statique des fluides}{9}{section.2.2}
+\contentsline {paragraph}{\'E{}tude des forces de pression}{11}{section*.44}
+\contentsline {paragraph}{Bilan}{11}{section*.45}
+\contentsline {paragraph}{Autre \'ecriture}{12}{section*.46}
+\contentsline {section}{\numberline {2.3}Statique des fluides homog\`enes et incompressibles}{12}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Pr\'esentation}{12}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Exemples}{12}{subsection.2.3.2}
+\contentsline {subsubsection}{Pression sous-marine}{12}{section*.47}
+\contentsline {paragraph}{Question}{13}{section*.48}
+\contentsline {paragraph}{Question}{13}{section*.49}
+\contentsline {subsubsection}{Manom\`etre \`a air libre}{15}{section*.50}
+\contentsline {subsubsection}{Barom\`etre \`a mercure}{15}{section*.51}
+\contentsline {paragraph}{Application num\'erique}{15}{section*.52}
+\contentsline {paragraph}{Question}{16}{section*.53}
+\contentsline {section}{\numberline {2.4}Fluides homog\`enes et compressibles}{16}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Pr\'esentation d'un mod\`ele de l'atmosph\`ere}{16}{subsection.2.4.1}
+\contentsline {paragraph}{Mod\`ele de l'atmosph\`ere isotherme}{16}{section*.54}
+\contentsline {subsection}{\numberline {2.4.2}Altitude caract\'eristique du mod\`ele}{16}{subsection.2.4.2}
+\contentsline {paragraph}{N.B.}{17}{section*.55}
+\contentsline {paragraph}{N.B.}{18}{section*.56}
+\contentsline {section}{\numberline {2.5}Pouss\'ee d'Archim\`ede}{18}{section.2.5}
+\contentsline {paragraph}{D\'efinition}{18}{section*.57}
+\contentsline {paragraph}{Illustration}{18}{section*.58}
+\contentsline {paragraph}{Question}{19}{section*.59}
+\contentsline {paragraph}{Th\'eor\`eme d'Archim\`ede}{19}{section*.60}
+\contentsline {chapter}{\numberline {3}1\up {\lowercase {er}}\relax ~Principe de la Thermodynamique}{21}{chapter.3}
+\contentsline {section}{\numberline {3.1}Pr\'esentation}{21}{section.3.1}
+\contentsline {paragraph}{Exemple}{21}{section*.61}
+\contentsline {paragraph}{Les transformations}{21}{section*.62}
+\contentsline {paragraph}{Ph\'enom\`enes dissipatifs}{21}{section*.63}
+\contentsline {section}{\numberline {3.2}\'Energie d'un syst\`eme}{21}{section.3.2}
+\contentsline {paragraph}{L'\'energie totale}{21}{section*.64}
+\contentsline {paragraph}{N.B.}{22}{section*.65}
+\contentsline {paragraph}{Propri\'et\'es de l'\'energie interne U}{22}{section*.66}
+\contentsline {section}{\numberline {3.3}Transfert d'\'energie}{22}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Transferts thermiques}{22}{subsection.3.3.1}
+\contentsline {paragraph}{N.B.}{23}{section*.67}
+\contentsline {subsection}{\numberline {3.3.2}Travail des forces de pression}{23}{subsection.3.3.2}
+\contentsline {paragraph}{N.B.:}{24}{section*.68}
+\contentsline {subsection}{\numberline {3.3.3}Autres formes de travail}{24}{subsection.3.3.3}
+\contentsline {paragraph}{Travail \'electrique:}{24}{section*.69}
+\contentsline {section}{\numberline {3.4}Premier principe}{24}{section.3.4}
+\contentsline {paragraph}{\'E{}nonc\'e:}{24}{section*.70}
+\contentsline {paragraph}{Remarque:}{25}{section*.71}
+\contentsline {paragraph}{Exemple 1}{25}{section*.72}
+\contentsline {paragraph}{Question}{25}{section*.73}
+\contentsline {paragraph}{Exemple 2}{26}{section*.74}
+\contentsline {paragraph}{Question}{26}{section*.75}
+\contentsline {section}{\numberline {3.5}Fonction enthalpie}{26}{section.3.5}
+\contentsline {paragraph}{D\'efinition}{26}{section*.76}
+\contentsline {paragraph}{propri\'et\'e}{26}{section*.77}
+\contentsline {paragraph}{D\'emonstration}{27}{section*.78}
+\contentsline {paragraph}{Propri\'et\'e}{27}{section*.79}
+\contentsline {paragraph}{Rappel}{27}{section*.80}
+\contentsline {paragraph}{N.B.}{27}{section*.81}
+\contentsline {section}{\numberline {3.6}Capacit\'es thermiques}{27}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}D\'efinitions}{27}{subsection.3.6.1}
+\contentsline {subsection}{\numberline {3.6.2}Cas des gaz parfaits}{27}{subsection.3.6.2}
+\contentsline {paragraph}{Propri\'et\'e}{28}{section*.82}
+\contentsline {paragraph}{D\'emonstration}{28}{section*.83}
+\contentsline {paragraph}{Propri\'et\'e}{28}{section*.84}
+\contentsline {paragraph}{D\'emonstration}{28}{section*.85}
+\contentsline {subsection}{\numberline {3.6.3}Cas des gaz condens\'ees}{28}{subsection.3.6.3}
+\contentsline {section}{\numberline {3.7}Lois de Laplace}{29}{section.3.7}
+\contentsline {paragraph}{D\'emonstration}{29}{section*.86}
+\contentsline {chapter}{\numberline {4}2\up {\lowercase {e}}\relax ~Principe de la Thermodynamique}{31}{chapter.4}
+\contentsline {section}{\numberline {4.1}Pr\'esentation}{31}{section.4.1}
+\contentsline {paragraph}{Causes d'irr\'eversibilit\'es}{31}{section*.87}
+\contentsline {section}{\numberline {4.2}Fonction entropie}{31}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}D\'efinitions}{31}{subsection.4.2.1}
+\contentsline {paragraph}{Source de chaleur}{31}{section*.88}
+\contentsline {paragraph}{Thermostat}{31}{section*.89}
+\contentsline {paragraph}{N.B.}{31}{section*.90}
+\contentsline {subsection}{\numberline {4.2.2}\'Enonc\'e du 2e Principe}{32}{subsection.4.2.2}
+\contentsline {subsubsection}{\'Enonc\'e sous forme int\'egr\'ee}{32}{section*.91}
+\contentsline {paragraph}{N.B.}{32}{section*.92}
+\contentsline {subsubsection}{\'Enonc\'e sous forme diff\'erentielle}{33}{section*.93}
+\contentsline {subsubsection}{Exemple}{33}{section*.94}
+\contentsline {paragraph}{\'Enonc\'e}{33}{section*.95}
+\contentsline {paragraph}{Calcul de $\Delta S_{\Sigma _1}$ ?}{34}{section*.96}
+\contentsline {paragraph}{Calcul de $\Delta S_{\Sigma _2}$ ?}{34}{section*.97}
+\contentsline {paragraph}{Calcul de $S^C$ ?}{34}{section*.98}
+\contentsline {paragraph}{Montrons que $ S^C > 0 $ si $ T_1 \not =T_2 $}{35}{section*.99}
+\contentsline {subsubsection}{Syst\`eme isol\'e}{36}{section*.100}
+\contentsline {section}{\numberline {4.3}Identit\'e thermodynamique}{36}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}\'E{}nonc\'e}{36}{subsection.4.3.1}
+\contentsline {paragraph}{N.B.}{36}{section*.101}
+\contentsline {paragraph}{Justification de l'expression}{36}{section*.102}
+\contentsline {subsection}{\numberline {4.3.2}Autre formulation}{36}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Application aux solides}{37}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.4}Application aux gaz parfaits}{37}{subsection.4.3.4}
+\contentsline {paragraph}{Expression de $ \Delta S_{A \to B} $ en variables $ (T, V) $}{37}{section*.103}
+\contentsline {chapter}{\numberline {5}Machines Thermiques}{39}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introduction}{39}{section.5.1}
+\contentsline {paragraph}{Principe de fonctionnement d'un frigo}{39}{section*.104}
+\contentsline {section}{\numberline {5.2}Mod\'elisation}{40}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}D\'efinitions}{40}{subsection.5.2.1}
+\contentsline {paragraph}{Source m\'econique:}{40}{section*.105}
+\contentsline {paragraph}{D\'efinition}{40}{section*.106}
+\contentsline {subsection}{\numberline {5.2.2}Machine ditherme}{40}{subsection.5.2.2}
+\contentsline {paragraph}{Exemple du frigo}{40}{section*.107}
+\contentsline {paragraph}{Bilan thermodynamique}{41}{section*.108}
+\contentsline {paragraph}{Diagramme de Raveau}{41}{section*.109}
+\contentsline {subsection}{\numberline {5.2.3}\'E{}tude des moteurs thermiques}{42}{subsection.5.2.3}
+\contentsline {paragraph}{Rendement d'un moteur}{42}{section*.110}
+\contentsline {paragraph}{Exemple}{43}{section*.111}
+\contentsline {paragraph}{N.B.}{43}{section*.112}
+\contentsline {subsection}{\numberline {5.2.4}\'E{}tude des machines frigorifiques}{43}{subsection.5.2.4}
+\contentsline {paragraph}{\'E{}fficacit\'e}{43}{section*.113}
+\contentsline {paragraph}{N.B.}{44}{section*.114}
+\contentsline {subsection}{\numberline {5.2.5}Pompes \`a chaleur}{44}{subsection.5.2.5}
+\contentsline {subsubsection}{Pr\'esentation}{44}{section*.115}
+\contentsline {subsubsection}{Formalisation thermodynamique}{44}{section*.116}
+\contentsline {subsubsection}{Efficacit\'e de la Pompe \`a Chaleur (PAC)}{46}{section*.117}
+\contentsline {paragraph}{A.N.}{46}{section*.118}
+\contentsline {subsubsection}{Exemple}{46}{section*.119}
+\contentsline {paragraph}{Question}{47}{section*.120}
+\contentsline {paragraph}{\'Etude du 100\% \'electrique :}{47}{section*.121}
+\contentsline {paragraph}{\'Etude de la Pompe \`a Chaleur :}{47}{section*.122}
+\contentsline {subsection}{\numberline {5.2.6}Cycle de Carnot}{47}{subsection.5.2.6}
+\contentsline {paragraph}{D\'efinition}{47}{section*.123}
+\contentsline {paragraph}{N.B.}{47}{section*.124}
+\contentsline {paragraph}{Repr\'esentation dans un diagramme de Clapeyron (\textit {\hyperref [fig:diagramme_de_clapeyron]{Figure \ref *{fig:diagramme_de_clapeyron}}})}{47}{figure.5.7}
+\contentsline {paragraph}{Repr\'esentation dans un diagramme entropique (\textit {\hyperref [fig:diagramme_entropique]{Figure \ref *{fig:diagramme_entropique}}})}{47}{figure.5.8}
+\contentsline {paragraph}{Diagramme de Clapeyron}{47}{section*.127}
+\contentsline {chapter}{\numberline {6}Le corps pur diphas\'e}{51}{chapter.6}
+\contentsline {section}{\numberline {6.1}Pr\'esentation}{51}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Dans la vie quotidienne}{51}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Vocabulaire}{52}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}Propri\'et\'es}{52}{subsection.6.1.3}
+\contentsline {section}{\numberline {6.2}\'E{}tude thermodynamique}{52}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Enthalpie de changement d'\'etat}{52}{subsection.6.2.1}
+\contentsline {paragraph}{D\'efinition}{52}{section*.128}
+\contentsline {paragraph}{N.B.}{52}{section*.129}
+\contentsline {subsection}{\numberline {6.2.2}Entropie de changement d'\'etat}{53}{subsection.6.2.2}
+\contentsline {paragraph}{Exemple}{53}{section*.130}
+\contentsline {section}{\numberline {6.3}Diagramme de changement d'\'etats}{53}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Isothermes et diagrammes (P, V)}{53}{subsection.6.3.1}
+\contentsline {paragraph}{Zone 1}{53}{section*.131}
+\contentsline {paragraph}{Zone 2}{54}{section*.132}
+\contentsline {paragraph}{Zone 3}{54}{section*.133}
+\contentsline {paragraph}{N.B.}{54}{section*.134}
+\contentsline {subsection}{\numberline {6.3.2}Diagramme (P, T)}{54}{subsection.6.3.2}
+\contentsline {paragraph}{Courbe 1}{54}{section*.135}
+\contentsline {paragraph}{Courbe 2}{54}{section*.136}
+\contentsline {paragraph}{Courbe 3}{54}{section*.137}
+\contentsline {paragraph}{Point T}{54}{section*.138}
+\contentsline {paragraph}{Cas de l'eau}{54}{section*.139}
+\contentsline {paragraph}{Lien entre les 2 diagrammes}{54}{section*.140}
+\contentsline {section}{\numberline {6.4}Grandeurs massiques}{55}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}D\'efinition}{55}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Grandeurs massiques}{55}{subsection.6.4.2}
+\contentsline {paragraph}{N.B.}{55}{section*.141}
+\contentsline {chapter}{\numberline {7}Diffusion thermique}{57}{chapter.7}
+\contentsline {section}{\numberline {7.1}Loi de Fourier}{57}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Introduction}{57}{subsection.7.1.1}
+\contentsline {paragraph}{N.B.}{57}{section*.142}
+\contentsline {subsection}{\numberline {7.1.2}Loi de Fourier}{57}{subsection.7.1.2}
+\contentsline {paragraph}{\'Enonc\'e}{57}{section*.143}
+\contentsline {paragraph}{N.B.}{58}{section*.144}

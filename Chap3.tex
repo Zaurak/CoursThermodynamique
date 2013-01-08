@@ -1,0 +1,404 @@
+\chapter{1\ier~Principe de la Thermodynamique}
+
+\section{Présentation}
+	
+				On étudie dans ce chapitre l'évolution d'un système d'un état d'équilibre à un autre.
+
+				\paragraph{Exemple}
+				\begin{itemize}
+					\item Compression d'un gaz dans un piston
+					\item Chauffage d'une casserole d'eau
+				\end{itemize}
+		
+				\paragraph{Les transformations} peuvent être:
+				\begin{itemize}
+					\item Brusques ou brutales, les paramètres ne sont pas définis entre les 2 états d'équilibre. Ces transformation sont nécessairement \emph{irréversibles}.
+					\item Lentes, on est en permanence dans un état d'équilibre. On parle de \emph{transformations quasistatiques}. 
+								Une transformation quasistatique est \emph{réversible} si on passe par les mêmes états d'équilibre dans un sens de la transformation ou dans l'autre.
+								Cela suppose l'absence de \emph{phénomène dissipatif}.
+				\end{itemize}
+		
+				\paragraph{Phénomènes dissipatifs}:
+				\begin{itemize}
+					\item Frottements secs ou fluide, inelasticité
+					\item Diffusion de matière, de chaleur, de quantité de mouvement (viscosité).
+					\item Inhomogénéité du système (ex: pression, température)
+				\end{itemize}
+
+	\section{Énergie d'un système}
+				\paragraph{L'énergie totale} d'un système est E tel que:
+				\[
+					E = U + Ec_{\mbox{macro}} + Ep_{\mbox{ext}}
+				\]
+				Avec:
+				\begin{itemize}
+					\item $ U $				\'E{}nergie interne ($ = Ec_{\mbox{agitation}} + Ep_{\mbox{int}} $)
+					\item $ Ec_{\mbox{macro}} $	\'E{}nergie cinétique liée au mouvement d'ensemble
+					\item $ Ep_{\mbox{ext}} $	\'E{}nergie potentielle du système par rapport à l'extérieur
+				\end{itemize}
+				
+				\paragraph{N.B.} Exemple d'un ballon de foot rempli d'air et de masse $m_B$ (\reffig{ballon_de_foot})
+						
+						\fig{ballon_de_foot}
+						{\'E{}nergie du système "Ballon de foot"}
+										
+				\[
+					Ec_{\mbox{macro}} = \frac{1}{2} m_B v_B^2
+				\]
+				\[
+					Ep_{\mbox{ext}} = m g z_B + K
+				\]
+				\[
+					U = Ec_{\mbox{agitation}} + Ep_{\mbox{int}}
+				\]
+				
+				Avec:
+				\begin{itemize}
+					\item $ Ep_{\mbox{int}} $ 	\'E{}nergie potentielle d'agitation entre les particules
+					\item $Ec_{\mbox{agitation}} $ 	\'E{}nergie cinétique des particules en mouvement à cause de l'agitation thermique
+				\end{itemize}
+				
+				Si on a un gaz parfait, on a:
+				\[
+					U = Ec_{\mbox{agitation}}
+				\]
+				
+				\paragraph{Propriétés de l'énergie interne U}
+				\begin{itemize}
+					\item $ U $ est une grandeur extensive, c'est-à-dire $ \displaystyle{U_{\Sigma_1 \cup \Sigma_2} = U_{\Sigma_1} + U_{\Sigma_2}} $
+					\item $ U $ est une fonction d'état c'est-à-dire que $ U $ ne dépend que des paramètres d'état
+				\end{itemize}
+				
+				
+				
+
+	\section{Transfert d'énergie}
+
+	   \subsection{Transferts thermiques}
+	   	
+	   	Il y a 3 modes de transferts thermiques:
+	   	\begin{itemize}
+	   		\item Par \emph{conduction} (ex: louche en argent dans la soupière)
+	   		\item Par \emph{rayonnement} (ex: chaleur supplémentaire au soleil)
+	   		\item Par \emph{convection} (ex: mouvement d'air dans une pièce chauffée)
+	   	\end{itemize}
+	   	
+	   	\paragraph{N.B.}
+	   	\begin{itemize}
+			\item 	On note $ Q $ la quantité d'énergie reçue par le système de la part de l'extérieur au cours de la transformation.
+				Si la transformation est infinitésimale alors on notera $ \delta Q $ la quantité de chaleur reçue
+			\item	$ Q $ peut être:
+				\subitem $ > 0 $ (effectivement reçue)
+				
+				ou
+				\subitem $ < 0 $ (effectivement donnée)
+			\item 	Lors d'une transformation adiabatique:
+				\subitem $ \delta Q = 0 $
+				\subitem $ Q = 0 $ 
+		\end{itemize}
+
+
+	   \subsection{Travail des forces de pression}
+	   		Considérons un piston de section $ S $: (Voir \reffig{piston_simple})
+	   		
+	   				\fig{piston_simple}
+	   				{Travail des forces de pressions d'un piston}
+																		
+	   		\[
+	   			\underset{\text{ext}\to \text{piston}}{\delta W}
+	   			= 
+	   			\vec{F}_{\text{ext}} \times \vec{d}l = \text{travail reçue par le piston}
+	   		\]
+	   		
+	   		En $ x $ on est à l'équilibre: $ \displaystyle{E_c(x) = 0} $
+	   		
+	   		En $ x + \d x $ on est à l'équilibre: $ \displaystyle{E_c(x + \d x) = 0} $
+	   		
+	   		\[
+	   			\Delta E_c = 0 =	\underset{\text{ext}\to \text{piston}}{\delta W} +
+	   								\underset{\text{gaz}\to \text{piston}}{\delta W}
+	   		\]
+	   		
+	   		D'où:
+	   		\begin{itemize}
+				\item[$\bullet$] $ \displaystyle{\underset{\text{gaz}\to \text{piston}}{\delta W} = 
+									\vec{F}_{\text{ext}} \times \vec{d}l} $
+				\item[$\bullet$]	$ \displaystyle{\underset{\text{gaz}\to \text{piston}}{\delta W} = 
+									- \underset{\text{piston}\to \text{gaz}}{\delta W}} $
+				\item[$\Rightarrow$] $ \displaystyle{\underset{\text{piston}\to \text{gaz}}{\delta W} =
+										  - \vec{F}_{\text{ext}} \vec{d}l} $
+			\end{itemize}
+			
+			On pose:
+			\[
+				\vec{F}_{\text{ext}} = P_{\text{ext}} \times S \vec{u}_x
+			\]
+			\[
+				\vec{d}l = \d x \vec{u}_x
+			\]
+			
+			Puis:
+			\[
+				\underset{\text{piston}\to \text{gaz}}{\delta W} = 
+				- P_{\text{ext}} \underbrace{S \d x}_{\d V} \Rightarrow
+				\underset{\text{piston}\to \text{gaz}}{\delta W} = 
+				\delta W = - P_{\text{ext}} \d V
+			\]
+			
+			On a donc:
+			\[
+				\underset{1 \to 2}{W} = \int_1^2 \delta W = \int_1^2 - P_{\text{ext}} \d V =
+				\text{travail reçue par le gaz de l'état 1 à l'état 2}
+			\]
+			
+			\paragraph{N.B.:}
+			\begin{itemize}
+				\item Si $ \delta W > 0 $: le gaz est comprimé, il reçoit effectivement de l'énergie.
+				\item Si $ \delta W < 0 $: le gaz se détend, il a donné effectivement de l'énergie.
+				\item Si la transformation est quasi-statique alors $ P = P_{\text{ext}} $ à tout instant 
+						donc $ \delta W = - P \d V $
+			\end{itemize}
+	   		
+	   \subsection{Autres formes de travail}
+	   
+	   		\paragraph{Travail électrique:} $ \delta W = R i^2 \d t = \frac{U^2}{R} \d t $
+	   		
+	   		(Voir \reffig{circuit_electrique})
+	   		
+	   				\fig{circuit_electrique}
+	   				{Travail électrique sur un circuit}
+	   			   		
+	\section{Premier principe}
+				\paragraph{\'E{}noncé:} Pour un système fermé, le 1\ier principe est 
+				un principe de conservation de l'énergie, on a:
+				\[
+					\underset{1 \to 2}{\Delta U} = 
+					\underset{1 \to 2}{W} + \underset{1 \to 2}{Q}
+				\]
+				
+				\[
+					\d U = \delta W + \delta Q
+				\]
+				
+				\paragraph{Remarque:}
+				\[
+					U = C \times T
+				\]
+				\[
+					\d U = C_V \times \d T
+				\]
+				
+				\paragraph{Exemple 1}
+				Soient 2 briques de capacité thermique $ C_1 $ et $ C_2 $,
+				 initialement aux températures $ T_1 $ et $ T_2 $.
+				On les rassemble et on les isole thermiquement (Voir \reffig{deux_briques})
+				
+						\fig{deux_briques}
+						{\'E{}tat initial du système brique 1 + brique 2}
+								
+				\paragraph{Question} Trouver $ T_f $
+				
+				\[
+					\Sigma_1 = \text{brique } 1
+				\]
+				\[
+					\Sigma_2 = \text{brique } 2
+				\]
+				
+				\[
+					\underset{i \to f}{\Delta U_{\Sigma_1 \cup \Sigma_2}}	= 
+					\underbrace{\underset{i \to f}{W_{\Sigma_1 \cup \Sigma_2}}}_{= 0} +
+					\underbrace{\underset{i \to f}{Q_{\Sigma_1 \cup \Sigma_2}}}_{= 0} = 0
+				\]
+				
+				$ U $ grandeur extensive:
+				\begin{eqnarray*}
+					\Delta U_{\Sigma_1 \cup \Sigma_2}
+					& = 
+					& \Delta U_{\Sigma_1} + \Delta U_{\Sigma_2}\\
+					& =
+					& C_1\left[T_f - T_1\right] + C_2\left[T_f-T_2\right]\\
+					& = 
+					& 0
+				\end{eqnarray*}
+				\[
+					T_f = \frac{C_1 T_1 + C_2 T_2}{C_1 + C_2}
+				\]
+				
+				\paragraph{Exemple 2}
+				Dans la brique 1 on a mis une résistance $ R_0 $ 
+				qui est parcourue par un courant $ I $ pendant 
+				une durée $\tau$
+				
+				\paragraph{Question} Trouver $ T_f^\prime $
+				
+				\[
+					\underset{i \to f}{\Delta U_{\Sigma_1 \cup \Sigma_2}} =
+					\underbrace{
+						\underset{i \to f}{Q_{\Sigma_1 \cup \Sigma_2}}
+					}_{= 0} +
+					\underbrace{
+						\underset{i \to f}{W_{\Sigma_1 \cup \Sigma_2}}
+					}_{= R_0 I^2 \times \tau}
+				\]
+				
+				\[
+					\Delta U_{\Sigma_1} + \Delta U_{\Sigma_2} =
+					R_0 I^2 \times \tau
+				\]
+				\[
+					C_1\left[T_f^\prime - T_1\right] + 
+					C_2\left[T_f^\prime - T_2\right] =
+					R_0 I^2 \times \tau
+				\]
+				\[
+					\Rightarrow T_f^\prime = 
+					\frac{C_1 T_1 + C_2 T_2 + R_0 I^2 \times \tau}{C_1 + C_2}
+				\]
+
+	\section{Fonction enthalpie}
+				\paragraph{Définition} L'\emph{enthalpie} $ H $ est la fonction d'état extensive, définie par:
+				\[
+					H = U + PV
+				\]
+				
+				\paragraph{propriété} Pour une transformation isobare quasi-statique et où seul le travail des forces de pression intervient, on a:
+				\[
+					\d H = \delta Q
+				\]
+				et
+				\[
+					\underset{1 \to 2}{\Delta H} = \underset{1 \to 2}{Q}
+				\]
+				
+				\paragraph{Démonstration}:				
+				\begin{eqnarray*}
+					\d H 	& = &	\d U + \d (PV)\\
+						& = &	\delta Q - P \d V + V \d P + P \d V \\
+						& = & \delta Q + V \d P
+				\end{eqnarray*}
+				
+				Ici
+				\[
+					\underbrace{\d P = 0}_{\text{isobare}} \Rightarrow \d H = \delta Q
+				\]
+				
+				\paragraph{Propriété} Seconde Loi de Joule
+				
+				Pour un gaz parfait, $ H $ ne dépend que de $ T: H = H(T) $
+				
+				\paragraph{Rappel} Première Loi de Joule
+				\[
+					U = U(T) \text{ pour un gaz parfait}
+				\]
+				
+				\paragraph{N.B.} On a
+				\begin{eqnarray*}
+					H & = & U + PV\\
+					H & = & U(T) + nRT\\
+					H & = & H(T)
+				\end{eqnarray*}
+
+	\section{Capacités thermiques}
+
+	   \subsection{Définitions}
+				On définit:
+				\[
+					C_V = \left( \frac{\partial U}{\partial T}\right)_V
+				\]
+				\[
+					C_P = \left( \frac{\partial H}{\partial T}\right)_P
+				\]
+
+	   \subsection{Cas des gaz parfaits}
+	   			On a:
+	   			\[
+	   				U = U(T) \Rightarrow C_V = \frac{\d U}{\d T}
+	   			\]
+	   			\[
+	   				H = H(T) \Rightarrow C_P = \frac{\d H}{\d T}
+	   			\]
+	   			
+	   			On définit:
+	   			\[
+	   				\gamma = \frac{C_P}{C_V}
+	   			\]
+	   			
+	   			Avec: $ \gamma = $ Constante $ \approx 1.4 $
+	   			
+	   			\paragraph{Propriété}
+	   			\[
+	   				C_P - C_V = nR
+	   			\]
+	   			
+	   			\paragraph{Démonstration}:
+	   			
+	   			\begin{eqnarray*}
+	   				H 				& = & U + PV\\
+	   								& = &	U + nRT\\
+	   				\frac{\d H}{\d T} 		& = & \frac{\d U}{\d T} + nR\\
+	   				\Rightarrow C_P - C_V 	& = & nR
+	   			\end{eqnarray*}
+	   			
+	   			\paragraph{Propriété}
+	   			\[
+	   				C_V = \frac{nR}{\gamma - 1}
+	   			\]
+	   			\[
+	   				C_P = \frac{nR\gamma}{\gamma - 1}
+	   			\]
+	   			
+	   			\paragraph{Démonstration}:
+	   			\begin{eqnarray*}
+	   				C_P - C_V 	& = & nR\\
+	   				C_P 		& = & \gamma C_V\\
+	   				\Longrightarrow \gamma C_V - C_V 	& = & nR\\
+	   				C_V						& = & \frac{nR}{\gamma - 1}\\
+	   				C_P						& = & \frac{nR\gamma}{\gamma - 1}\\
+	   			\end{eqnarray*}
+
+	   \subsection{Cas des gaz condensées}
+	   			Ici on a:
+	   			\[
+	   				C_P \approx C_V = C
+	   			\]
+	   			
+	\section{Lois de Laplace}
+				Pour un gaz parfait, lors d'une transformation quasi-statique, adiabatique où seul le travail des forces de pression intervient, on a:
+				\begin{eqnarray*}
+					PV^\gamma 			& = & \text{ Constante}\\
+					P^{1-\gamma} T^\gamma	& = & \text{ Constante}\\
+					T V^{\gamma - 1}		& = & \text{ Constante}\\
+				\end{eqnarray*}
+				
+				\paragraph{Démonstration}
+				\[
+					\underbrace{\underbrace{\d U}_{C_V \d T}}_{\frac{nR \d T}{\gamma - 1}} = \underbrace{\delta Q}_{= 0} + \underbrace{\delta W}_{-P \d V}
+				\]
+				
+				\[
+					\frac{nR \d T}{\gamma - 1} = - P \d V
+				\]
+				
+				Or
+				\begin{eqnarray*}
+					nRT 				& = & PV \\
+					\Rightarrow n R \d T 	& = & P \d V + V \d P \\
+				\end{eqnarray*}
+
+				On a donc:
+				\begin{eqnarray*}
+					n R \d T 												& = & - (\gamma - 1) P \d V \\
+																			& = & P \d V +V \d P \\
+					P \d V \left[1 + \gamma - 1\right] + V \d P 			& = & 0\\
+					\gamma P \d V + V \d P 									& = & 0\\
+					\left(\gamma P \d V + V \d P\right) \times \frac{1}{PV}	& = & 0\\
+					\gamma \frac{\d V}{V} + \frac{\d P}{P}					& = & 0\\
+					\gamma \d \left[ \ln V\right] + \d\left[\ln P\right]	& = &	0\\
+					\text{On intègre, }\ln\left[P V^\gamma\right]			& = & \ln\left[P_0 V_0^{\gamma - 1}\right]\\
+					PV^\gamma												& = & P_0 V_0^\gamma \\
+					\text{Or, } P 											& = & \frac{nRT}{V}\\
+					\Rightarrow TV^{\gamma - 1}								& = & T_0 V_0^{\gamma - 1}\\
+					V														& = & \frac{nRT}{P}\\
+					P^{1 - \gamma} T^\gamma 								& = & P_0^{1 - \gamma} T_0^\gamma
+				\end{eqnarray*}

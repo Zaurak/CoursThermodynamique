@@ -1,0 +1,320 @@
+\chapter{Éléments de statique des fluides}
+
+\section{Introduction}
+
+		\subsection{Généralités}
+	
+				\paragraph{État fluide}
+				\begin{itemize}
+					\item \'E{}tat liquide (quasi incompressible)
+								\\ou
+					\item \'E{}tat gazeux (fortement compressible)
+				\end{itemize}
+			
+				\paragraph{Hypothèses}
+				\begin{itemize}
+					\item[*] On se place dans ce chapitre au niveau mésoscopique
+					\item[*] Le fluide est un milieu continu
+					\item[*] Le fluide est parfait, c'est-à-dire sans viscosité
+				\end{itemize}
+		
+		\subsection{Pression dans un fluide}
+		
+				\paragraph{Dans un fluide parfait} la force exercée par le fluide sur un solide est perpendiculaire à la surface du solide. 
+				Cette force est dirigé vers l'intérieur du solide (Voir \reffig{pressions_fluide}).
+						
+						\fig{pressions_fluide}
+						{Direction des forces de pressions dans un fluide}
+		
+				On a:
+				\[
+					\d \vec{F}_M = P(M) \times \d S_M \times \vec{n}_M
+				\]
+		
+				Avec:
+				\begin{itemize}
+					\item $ \d S_M $ Surface élémentaire autour de $ M $
+					\item $ \vec{n}_M $ Vecteur unitaire perpendiculaire à la surface dirigé vers l'intérieur
+				\end{itemize}
+	
+	
+	\section{Relation fondamentale de la statique des fluides}
+	
+				Soit $ M(x, y, z) $ un point du fluide sommet d'un cube de cotés $ \d x, \d y, \d z $ (Voir \reffig{cube_fluide}).
+						
+						\fig{cube_fluide}
+						{Entourage du point M}	
+	
+				\paragraph{\'E{}tude des forces de pression} On se place de côté (\reffig{cube_fluide_vue_cote}).
+				
+						\fig{cube_fluide_vue_cote}
+						{Entourage du point M vu de côté}	
+	
+				Selon $ \vec{U}_x $ :
+				\begin{eqnarray*}
+					\d f_x	& = &	P(x, y, z) \d y \d z - P(x + \d x, y, z) \d y \d z \\
+					\d f_x	& = & - \frac{\partial P}{\partial x} \d x \d y \d z
+				\end{eqnarray*}
+	
+				De la même manière, on trouve:
+				\begin{eqnarray*}
+					\d f_y	& = &	- \frac{\partial P}{\partial y} \d x \d y \d z \\
+					\d f_z	& = & - \frac{\partial P}{\partial z} \d x \d y \d z
+				\end{eqnarray*}
+	
+				\paragraph{Bilan} Avec $ \vec{f} = $  résultante des forces de pression agissant sur le cube, on a:
+				\begin{eqnarray*}
+					\vec{f}	&	=	&	\underbrace{\left[	- \frac{\partial P}{\partial x} \vec{U}_x %
+										- \frac{\partial P}{\partial y} \vec{U}_y %
+										- \frac{\partial P}{\partial z} \vec{U}_z %
+																		\right]}_{- \vec{grad}[P]} \d x \d y \d z\\
+					\vec{f}	&	=	&	- \vec{grad}[P] \times \d x \d y \d z
+				\end{eqnarray*}
+	
+				Or le cube de fluide est immobile. Donc:
+				\[
+					m\vec{a} = \vec{f} + \vec{P} = \vec{0}
+				\]
+				
+				Or
+				\[
+					\vec{P} = - m g \vec{U_z} \mbox{    avec } n = \rho(M) \d x \d y \d z
+				\]
+				
+				Car $ m = \rho \times \d \tau_M =  \rho(M) \d x \d y \d z $
+				
+				On a donc
+				
+				\begin{eqnarray*}
+					- \vec{grad}[P] \times \d x \d y \d z - \rho(M) \times \d x \d y \d z \times g \times \vec{U_z}	&	=	&	0 \\
+					\vec{grad}[P]																																										&	=	&	- \rho(M) g \vec{U_z} \\
+																																																					&	=	& + \rho \vec{g}
+				\end{eqnarray*}
+	
+				\paragraph{Autre écriture} (\reffig{direction_z})
+				
+						\fig{direction_z}
+						{\'E{}critures différentes selon le contexte d'étude}
+			
+	\section{Statique des fluides homogènes et incompressibles}
+		
+		\subsection{Présentation}
+		
+				Un fluide \emph{incompressible} $ \Rightarrow \rho = \mbox{constante} $
+				
+				On a donc:
+				\[
+					\frac{\d P}{\d z} = - \rho g \Rightarrow P(z) - P(z_0) = - \rho g ( z - z_0 )
+				\]
+				
+				Attention! On a $ - g $ ou $ + g $ en fonction du contexte d'étude (ici, le contexte d'étude est celui \reffig{direction_vecteur_g})
+				
+						\fig{direction_vecteur_g}
+						{Direction du vecteur $\vec{g}$}
+				
+		\subsection{Exemples}
+		
+			\subsubsection{Pression sous-marine}
+			
+				On se place dans le contexte suivant (\reffig{pression_sous_marine}).
+				
+						\fig{pression_sous_marine}
+						{Contexte d'étude de la pression sous-marine}
+			
+				\begin{eqnarray*}
+					\frac{\d P}{\d z}		&	=	&	+ \rho g \\
+					P(z) - P(z = 0) 		&	= &	\rho g z \\
+					P(z)								&	= &	P_{\mbox{atm}} + \rho g z
+				\end{eqnarray*}
+				
+				\paragraph{Question} A quelle pression résiste une montre étendue à $ \SI{50}{m} $ ?
+				
+				Ici on a:
+			
+				\[
+			  	\left \{
+			   	\begin{array}{r c l}
+			    	z  		& = 			& \SI{50}{m} \\
+			      \rho	& = 			& \SI{10^3}{kg.m^3} \\
+			      g			& \approx & \SI{10}{m.s^{-2}}
+			   \end{array}
+			   \right . \\
+			   P(z=50) \approx 10^5 + 5.10^5 \approx \SI{6}{bars}
+				\]
+			
+				\paragraph{Question} Comment attacher un bateau dans un port ?
+				
+						\fig{pression_sous_marine_ancre}
+						{Pression sous-marine exercée sur un pneu plein de béton}
+						
+				On voit (\reffig{pression_sous_marine_ancre}) que l'on a:		
+				\[
+					F = \SI{2.10^5}{N} \Longleftrightarrow \SI{20}{tonnes}
+				\]
+			
+			\subsubsection{Manomètre à air libre}
+						
+						\fig{manometre_a_air_libre}
+						{Manomètre à air libre}
+						
+				On observe (\reffig{manometre_a_air_libre}):
+				\begin{eqnarray*}
+					\rho		&	=	&	\mbox{constante} \mbox{ (car le fluide est incompressible)}\\
+					P_A		&	=	&	P	\\
+					P_B		&	=	&	P_{atm}	\\
+					P_A		&	=	&	P_B + \rho g h	\\
+					\Rightarrow P &	=	&	P_{atm} + \rho g h
+				\end{eqnarray*}
+			
+			
+			\subsubsection{Baromètre à mercure}
+						
+						\fig{barometre_a_mercure}
+						{Baromètre à mercure}
+						
+				On observe (\reffig{barometre_a_mercure}):		
+				\begin{eqnarray*}
+					P_C	&	\approx	&	0 \mbox{ (quasi vide au dessus de C)} \\
+					P_A	&	=				&	P_{\mbox{atm}}
+				\end{eqnarray*}
+		
+				$ A $ et $ B $: même fluide et même altitude $ \Rightarrow P_B = P_A $
+				
+				$ A $ et $ C $: même fluide $ \Rightarrow P_B = P_C + \rho g h $
+				
+				$ \Longrightarrow P{\mbox{atm}} \approx \rho g h $ et en mesurant $ h $ on mesure $ P_{\mbox{atm}} $
+			
+				\paragraph{Application numérique} $ P_{\mbox{atm}} = \SI{101325}{Pa} $ correspond à $ h = \SI{760}{mm} $ de mercure
+				
+				\paragraph{Question} Pourquoi du mercure et pas de l'eau ?
+				
+				La raison est que:
+				\begin{eqnarray*}
+					\rho_{Hg}					&	=	&	\SI{13.6 \times 10^3}{kg.m^{-3}} \\
+					\rho_{\mbox{eau}} &	= &	\SI{10^3}{kg.m^{-3}} \Rightarrow \mbox{ Si le montage utilisait de l'eau alors } h' \approx \SI{10}{m}
+				\end{eqnarray*}
+			
+				Cette expérience a été réalisé par \emph{Torriceli} en 1643.
+				
+	\section{Fluides homogènes et compressibles}
+		
+		\subsection{Présentation d'un modèle de l'atmosphère}
+		
+				Ici, on cherche à déterminer $ P(z), \rho(z), T(z), ... $
+				
+				\paragraph{Modèle de l'atmosphère isotherme} hypothèses:
+				\begin{itemize}
+					\item L'air se comporte comme un gaz parfait de masse molaire $\SI{29}{g.mol^{-1}} $
+					\item $ \vec{g} $ est uniforme $ \displaystyle{\left( \vec{g} = \vec{g_0} \times \frac{R^2_T}{R^2_T + z^2} \right)} $ et $ (z << R_1) $
+					\item La température est constante et vaut $ T_0 $
+				\end{itemize}
+		
+		
+		
+		\subsection{Altitude caractéristique du modèle}
+		
+				Premièrement, déterminons $P(B)$ et $\rho(z)$
+				
+				On a:
+				\[
+					\frac{\d P}{\d z} = -\rho(z) g
+				\]
+		
+				Or:
+				\begin{itemize}
+					\item[*]									$ \displaystyle{\rho = \frac{m}{V} = \frac{nM}{V}} $
+					\item[*] 									$ \displaystyle{PV = nRT \Rightarrow \frac{n}{V} = \frac{P}{RT_0}} $
+					\item[$\Longrightarrow$]	$ \displaystyle{\rho(z) = \frac{MP(z)}{RT_0} \Rightarrow \frac{\d P}{\d z} = - \frac{Mg}{RT_0} P(z)} $
+				\end{itemize}
+		
+				D'où:
+				\[
+					\Rightarrow \frac{\d P}{\d z} = - \frac{Mg}{RT_0} P(z)
+				\]
+		
+				Soit
+				\begin{eqnarray*}
+					\frac{\d P}{P}						 												&	=	&	- \frac{Mg}{RT_0} \d z \\
+					\d\left[ \ln (P) \right] 													&	=	&	- \frac{Mg}{RT_0} \d z \\
+					\int_{z=0}^z \left(\d\ln\left[(P)\right] \right)	&	=	&	\int_{z=0}^z -\frac{Mg}{RT_0} \d z \\
+					\ln\left[P(z)\right] - \ln\left[P(0)\right]				&	=	&	-\frac{Mg}{RT_0} (z - 0) \\
+					\ln\left[\frac{P(z)}{P(0)}\right]									&	=	&	-\frac{Mg}{RT_0} z \\
+					P(z)																							&	=	&	P_0 \e{-\frac{Mg}{RT_0} z} \\
+					P(z)																							&	=	&	P_0 \e{- \frac{z}{H}} \mbox{ avec } H = \frac{R T_0}{Mg}
+				\end{eqnarray*}
+		
+				Puis:
+				\begin{eqnarray*}
+					\rho(z)									 													&	=	&	\frac{MP(z)}{R T_0} \\
+					\rho(z)									 													&	=	&	\underbrace{\frac{MP_0}{R T_0}}_{\rho_0} \times \e{- \frac{z}{H}} \\
+					\rho(z)									 													&	=	&	\rho_0 \e{- \frac{z}{H}} \\
+				\end{eqnarray*}
+		
+				\paragraph{N.B.} \reffig{courbe_altitude_caracteristique}
+				
+						\fig{courbe_altitude_caracteristique}
+						{Courbe de pression en fonction de l'altitude}	
+		
+				$ H = $ altitude caractéristique
+		
+				A.N. 
+				\[
+					H = \frac{8.31 \times 293}{29.10^{-3} \times 9.81} \approx \SI{8}{km}
+				\]
+				
+				Ici, après 3H, il n'y a presque plus de pression: on atteint les limites du modèle.
+				
+				Déterminons h tel que si $ z \leq h, P(z) \geq \frac{99}{100} P_0 $ 
+				
+				On a: 
+				\[
+					P(h) = P_0 \e{-\frac{h}{H}} = \frac{99}{100} P_0
+				\]
+				
+				D'où
+				\[
+					-\frac{h}{H} = \ln\left[\frac{99}{100}\right] 
+					\Rightarrow h = H \ln\left[\frac{100}{99}\right] 
+					\Rightarrow h \approx \SI{80}{m}
+				\]
+				\paragraph{N.B.} Le modèle $ T = T_0 $ est peu réaliste, on peut utiliser $ T(z) = T_0 \textcolor{red}{( 1 - ???)} $
+		
+	\section{Poussée d'Archimède}
+		
+				\paragraph{Définition} On appelle \emph{poussée d'Archimède} la résultante des forces de pression qu'exerce un fluide sur un corps immergé.
+				
+				\paragraph{Illustration} Soit une canette de coca immergée dans l'eau (\reffig{cannette_immergee})
+				
+						\fig{cannette_immergee}
+						{Canette de coca immergée dans l'eau}	
+	
+				\paragraph{Question} Calculer la résultante des forces de pression.
+				
+				\begin{itemize}
+					\item[$\bullet$] Résultante sur la surface latérale $ = \vec{0} $ (\reffig{cannette_immergee_vue_dessus})
+					
+						\fig{cannette_immergee_vue_dessus}
+						{Canette de coca immergée dans l'eau (vue du dessus)}
+						
+					\item[$\bullet$] Base supérieure:
+													\[
+														P(z_0 + h) \times S \times (- \vec{U}_z)
+													\]
+					\item[$\bullet$] Base inférieur:
+														\[
+															P(z_0) \times S \times (+ \vec{U}_z)
+														\]
+				\end{itemize}
+	
+	
+	
+	
+				Donc, 
+				\begin{eqnarray*}
+					\vec{\Pi}_A	&	=	&	P(z_0) S \vec{U}_z - P(z_0 + h) S \vec{U}_z \\
+											&	=	&	\underbrace{\left[ P(z_0) - P(z_0 + h) \right]}_{\rho g h} S \vec{U}_z \\
+											& = & \rho \times \underbrace{hS}_{\mbox{Volume}} \times g \vec{U}_z
+				\end{eqnarray*}
+				
+				\paragraph{Théorème d'Archimède} Un solide immergé dans un ou plusieurs fluides subit une force égale et opposée au poids des fluides déplacés, c'est la \emph{poussée d'Archimède}.
+				Cette force s'applique au centre d'inertie des fluides déplacés.			

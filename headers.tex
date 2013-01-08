@@ -1,0 +1,122 @@
+%%%%%%%%%%%%%%%% Packages utilisés %%%%%%%%%%%%%%%%
+
+%%%%% Encodage, Police et Langue %%%%%
+\usepackage[latin1]{inputenc}	% Définit l'encodage du fichier
+\usepackage[T1]{fontenc}	    % Charge les polices d'affichage adaptées
+\usepackage{lmodern}		    % Charge les polices vectorielles
+\usepackage[french]{babel}	    % Module de langue française
+
+%%%%% Graphiques et mise en forme avancée %%%%%
+\usepackage{graphicx}       % Permet de charger des images
+\usepackage{xcolor}		    % Module permettant de gérer des couleurs
+\usepackage{array}		    % Permet d'utiliser des tableaux
+\usepackage{framed}		    % Permet d'ajouter des "cadres"
+\usepackage{hyperref}       % Rend tous les liens internes cliquable
+\usepackage[all]{hypcap}	% Liens pointent sur figures et non titres
+\usepackage{vmargin}		% Permet de redéfinir les marges
+
+% Supprime la bordure rouge des liens cliquables
+\hypersetup{pdfborder={0 0 0 [3 3]}}
+
+% \setmarginsrb{1}{2}{3}{4}{5}{6}{7}{8}
+% 1 est la marge gauche
+% 2 est la marge en haut
+% 3 est la marge droite
+% 4 est la marge en bas
+% 5 fixe l'espace à gauche
+% 6 fixe l'entête
+% 7 fixe l'espace à droite
+% 8 fixe le pied de page
+%   _ _ _ _ _ _ _
+%  |  _ _ 2 _ _  |
+%  | |    6    | |
+%  | |         | |
+%  | |         | |
+%  | |         | |
+%  |1|5 Texte 7|3|
+%  | |         | |
+%  | |         | |
+%  | |         | |
+%  | |_ _ 8 _ _| |
+%  |_ _ _ 4 _ _ _|
+%
+\newcommand{\marge}{2cm}		% Marge générale du document
+\setmarginsrb{\marge}{\marge}{\marge}{\marge}
+{0cm}{3cm}{0cm}{3cm}			% Garde un écart pour le numéro de page & titres
+
+
+%%%%% Packages scientifiques %%%%%
+\usepackage{tikz,tkz-tab}		% Tableaux de variations
+\usepackage{amsmath}			% Fonctions mathématiques évoluées
+\usepackage{amssymb}			% Symboles mathématiques évoluées
+\usepackage{sistyle}			% Valeurs avec unités du Système Inter
+
+%%%%% Packages développeurs %%%%%
+\usepackage{listings}			% Codes sources formatés
+\usepackage{verbatim}			% Textes non-interprétés
+
+% Définition du style d'affichage des codes sources insérés
+\lstset{ %
+	%language=C,
+	basicstyle=\footnotesize,
+	numbers=left,
+	numberstyle=\tiny\color{gray},
+	stepnumber=1,
+	numbersep=5pt,
+	backgroundcolor=\color{white},
+	frame=lines,
+	rulecolor=\color{black},
+	captionpos=tb,
+	breaklines=true,
+	title=\lstname,
+	showstringspaces=false,
+	keywordstyle=\color{blue},
+	commentstyle=\color{gray},
+	stringstyle=\color{red},
+}
+
+%%%%% Packages divers %%%%%
+\usepackage{marvosym}			% Permet d'utiliser \EUR => €
+
+
+%%%%%%%%%%%%%%%% Commandes personnalisées %%%%%%%%%%%%%%%%
+
+%%%%% Commandes mathématiques %%%%%
+
+% Réalise une exponentielle de la forme exp[exposant]
+\newcommand{\e}[1]
+{\mathrm{~exp}\left[#1\right]}
+
+% Imprime le d de dérivée correctement (pas comme une variable d)
+\renewcommand{\d}{\mathrm{d}}
+
+% Met des accolades sur le côté d'une liste d'éléments
+\newcommand{\accolades}[1]
+{\left \{ \begin{array}{l c r} #1 \end{array} \right. }
+
+
+%%%%% Commandes développeurs %%%%%
+% Charge le fichier texte et l'affiche de manière brute (sans interprétation)
+\newcommand{\cmd}[1]
+{\begin{leftbar}\verbatiminput{#1}\end{leftbar}}
+
+
+%%%%% Commandes pratiques diverses %%%%%
+
+% Réalise un symbole Euro (sans se soucier du mode math ou non)
+\newcommand{\euro}
+{\text{\EUR}}
+
+% Crée un hyperlien numérotée vers la figure 
+\newcommand{\reffig}[1]
+{\textit{\hyperref[fig:#1]{Figure \ref*{fig:#1}}}}
+
+% Charge la figure donnée en premier paramètre et qui doit être dans le 
+% dossier Schemas. Le second paramètre défini le titre.
+\newcommand{\fig}[2]
+{\begin{figure}[htbp]
+	\centering\includegraphics{Schemas/#1}\caption{#2}\label{fig:#1}
+\end{figure}}
+
+
+

@@ -1,0 +1,285 @@
+\chapter{2\ieme~Principe de la Thermodynamique}
+
+\section{Présentation}
+
+Le 1\ier principe est le principe de conservation de l'énergie. Cependant, il ne donne pas d'information sur le sens de la transformation
+
+\paragraph{Causes d'irréversibilités}
+\begin{itemize}
+	\item Phénomènes de diffusion (de particules, thermiques et de quantité de mouvements ou viscosité)
+	\item Frottement (exemple rampe de skate)
+	\item Inélasticité (exemple du ressort ou pare-choc)
+\end{itemize}
+
+\section{Fonction entropie}
+
+  \subsection{Définitions}
+
+    \paragraph{Source de chaleur}
+    Une \emph{source de chaleur} est défini comme un système fermé qui n'échange de l'énergie avec l'extérieur que sous forme de transfert thermique.
+
+    Exemples: Brique chaude dans un bain froid ou thermos fermé.
+
+    \paragraph{Thermostat}
+    Un \emph{thermostat} est une source de chaleur particulière dont la température est constante.
+
+    Exemples: Mélange eau/glace ou l'atmosphère
+
+    \paragraph{N.B.}
+    Un thermostat échange de l'énergie avec l'extérieur de façon \emph{réversible}.
+
+  \subsection{Énoncé du 2e Principe}
+
+    \subsubsection{Énoncé sous forme intégrée}
+
+Le second principe postule l'existence d'une \emph{fonction d'état} extensive $ S $, 
+l'entropie définie par:
+\[
+ \underset{A \rightarrow B}{\Delta S} = \underset{A \rightarrow B}{S^e} + \underset{A \rightarrow B}{S^c}
+\]
+Avec:
+
+\[
+ \underset{A \rightarrow B}{S^e} = \int \frac{\delta Q_e}{T_e} = \text{ entropie d'échange}
+\]
+
+\begin{eqnarray*}
+\underset{A \rightarrow B}{S^C} & = & \text{ entropie de création} \\
+				& = & 0 \text{ si la transformation de A à B est réversible} \\
+				& > & 0 \text{ si la transformation de A à B est irréversible} \\
+\end{eqnarray*}
+
+\paragraph{N.B.}
+\begin{itemize}
+	\item $ \delta Qe = \delta Q $ transfert thermique reçu (dans 9 cas sur 10, chaleur reçu ) de la part de la ou les sources extérieures
+	\item $ Te = $ température de l'interface (Voir \reffig{melange_eau_glace})
+	
+				\fig{melange_eau_glace}
+				{Mélange d'eau et de glace (mélange à $ \SI{0}{\degC} $ )}
+				
+	\item $ [ S ] = J.K^-1 $
+\end{itemize}
+
+\subsubsection{Énoncé sous forme différentielle}
+
+On a:
+
+\[
+ dS = \delta S^e + \delta S^c
+\]
+
+Avec:
+\begin{eqnarray*}
+	\delta S^e 	& = & \frac{\delta Qe}{Te}\\
+	\delta S^c 	& = & 0 \mbox{ si réversible} \\
+		     	& > & 0 \mbox{ si irréversible} \\
+\end{eqnarray*}
+
+\subsubsection{Exemple}
+
+\paragraph{Énoncé}
+
+Soit 2 solides $ \Sigma_1 $ et $ \Sigma_2 $, de capacités thermiques $ C_1 $ et $ C_2 $, de températures initiales $ T_1 $ et $ T_2 $.
+On les assemble en les isolant (Voir \reffig{deux_briques})
+
+		\fig{deux_briques}
+		{Deux briques isolés thermiquement et mis en contact}
+
+Q) Montrons que $ S^c > 0 $ pour $ T_1 \neq  T_2 $
+
+On a vu: 
+\[
+ T_f = \frac{C_1 T_1 + C_2 T_2}{C_1 + C_2}
+\]
+
+\paragraph{Calcul de $\Delta S_{\Sigma_1}$ ?}
+État initial de $ \Sigma_1 = T_1 $
+État final de $ \Sigma_1 = T_f $
+
+On imagine une transformation fictive faisant passer $ \Sigma_1 $ de l'état initial ( $ T_1 $ ) à l'état final ( $ T_f $ ) de façon \emph{réversible}.
+
+On a: 
+\[
+	dS = \delta S^e + \underbrace{\delta S^C}_{ = 0 \text{ car réversible}}
+\]
+
+Or
+\begin{eqnarray*}
+	dU_{\Sigma_1}	& = & C_1 \d T \\
+	   			& = & \delta Q + \underbrace{\delta W}{ = 0}
+\end{eqnarray*}
+
+D'où:
+\[
+ \Rightarrow \boxed{\delta Q = C_1 \d T}
+\]
+
+On a donc:
+\[
+	\d S = \delta S^e = \frac{C_1 \d T}{Te}
+\]
+
+Or la transformation est réversible:
+\[
+	\Rightarrow T_e = T \Rightarrow \d S = C_1 \frac{\d T}{T}
+\]
+
+$ S $ est fonction d'état
+\[
+	\boxed{\Delta S_{\Sigma_1} = C_1 \ln \left(\frac{T_f}{T_1}\right)}
+\]
+
+\paragraph{Calcul de $\Delta S_{\Sigma_2}$ ?}
+De la même manière on trouve:
+\[
+	\boxed{\Delta S_{\Sigma_2} = C_2 \ln\left(\frac{T_f}{T_2}\right)}
+\]
+
+\paragraph{Calcul de $S^C$ ?}
+On a:
+\[
+	\Delta S_{\Sigma_1 \cup \Sigma_2} = 
+	\underbrace{S^e_{\Sigma_1 \cup \Sigma_2}}_{= 0 \text{ car $\Sigma_1 \cup \Sigma_2 $ isolé}} + 
+	\underbrace{S^C_{\Sigma_1 \cup \Sigma_2}}_{S^C}
+\]
+
+On a donc:
+\[
+	\boxed{S^C = C_1 \ln \left(\frac{T_f}{T_1}\right) - C_2 \ln \left(\frac{T_f}{T_2}\right)}
+\]
+
+
+\paragraph{Montrons que $ S^C > 0 $ si $ T_1 \neq T_2 $}
+~\newline
+Supposons $ C_1 = C_2 = C$ :
+\[
+	\Rightarrow T_f = \frac{T_1 + T_2}{2}
+\]
+
+\[
+	\boxed{S^C = C \ln \left[ \frac{(T_1 + T_2)^2}{4 \pi T_f} \right]}
+\]
+
+On a aussi:
+
+\[
+ S^C = C \ln \left[ \frac{\left( 1 + \frac{T_2}{T_1}\right)^2}{4 \frac{T_1}{T_2}} \right]
+\]
+
+Étudions: $ f(x) = \frac{(1 + x)^2}{x} $ pour $ x \in ] 0 ; +\infty [ $
+
+On a: 
+\begin{eqnarray*}
+	f'(x) 	& = & \frac{2x (1 + x) - (1 + x^2)}{x^2}\\
+		& = & \frac{(1 + x)(x - 1)}{x^2}\\
+		& = & \frac{x^2 - 1}{x^2}
+\end{eqnarray*}
+
+
+
+\begin{tikzpicture}
+	\tkzTabInit{$x$/1,$f^\prime$/1,$f$/2}{$0$, $1$, $+\infty$}
+	\tkzTabLine{,-, ,+}
+	\tkzTabVar{+/$$,-/$$,+/$$}
+\end{tikzpicture}
+
+On a donc:
+
+\begin{tikzpicture}
+	\tkzTabInit{$\frac{T_1}{T_2}$/1, $S^C$/2}{$0$, $1$, $+\infty$}
+	\tkzTabVar{+/$$,-/$0$,+/$$}
+\end{tikzpicture}
+
+\begin{eqnarray*}
+	S^C 	& = & 0 \text{ si } T_1 = T_2 \text{ réversible}\\
+		& > & 0 \text{ si } T_1 \neq T_2 \text{ irréversible}\\
+\end{eqnarray*}
+
+\subsubsection{Système isolé}
+
+Si le système est isolé alors $\delta S^e = 0 \Rightarrow \d S = \delta S = \delta S^C \geq 0$. Dans un système isolé l'entropie ne fait que croître.
+
+\section{Identité thermodynamique}
+\subsection{\'E{}noncé}
+On a pour une transformation réversible:
+\[
+	\boxed{\d U = T \d S - P \d V}
+\]
+
+\paragraph{N.B.} Formule utilisable tout le temps
+
+\paragraph{Justification de l'expression} On a:
+\[
+	\d U = \delta Q + \delta W
+\]
+
+Or
+\[
+	\d S = \delta S^e = \frac{\delta Q}{T}
+\]
+
+Réversible $ \Rightarrow T_e = T \Rightarrow \d S = \frac{\delta Q}{T} \Rightarrow \boxed{\delta Q = T \d S}$
+
+\[
+	\delta W = P \d V \text{ ici seulement les forces de pressions}
+\]
+
+\subsection{Autre formulation}
+
+Avec:
+\begin{eqnarray*}
+	H 	& = & U + PV\\
+	\d H 	& = & \d U + P \d V + V \d P \\
+		& = & T \d S - P \d V + P \d V + V \d P\\
+		& = & T \d S + V \d P
+\end{eqnarray*}
+
+\[
+	\boxed{\d H = T \d S + V \d P}
+\]
+
+
+\subsection{Application aux solides}
+Soit une transformation quelconque faisant passer de l'état $(T_A)$ à l'état $(T_B)$.
+
+On a
+\begin{eqnarray*}
+	 \d U	& = & C\d T\\
+	 	& = & T \d S - P\d V \\
+	 	& = & T\d S - 0 \\
+	\d S = C \frac{dT}{T}
+\end{eqnarray*}
+
+
+\[
+	\boxed{\underset{A \rightarrow B}{\Delta S} = C \ln \left( \frac{T_B}{T_A} \right)}
+\]
+
+\subsection{Application aux gaz parfaits}
+
+\paragraph{Expression de $ \Delta S_{A \to B} $ en variables $ (T, V) $}
+
+\[
+	\d U = \underbrace{C_V \d T}_{ \frac{nR}{\gamma - 1} \d T} = T\d S - P\d V
+\]
+
+\[
+	\d S = \frac{nR}{\gamma - 1} \frac{\d T}{T} + \frac{P \d V}{T}
+\]
+
+Or
+\[
+	\frac{P}{T} = \frac{nR}{V}
+\]
+
+Donc,
+\[
+	\d S = \frac{nR}{\gamma - 1} \frac{\d T}{T} + nR \frac{\d V}{V}
+\]
+
+\[
+	\boxed{\underset{A \to B}{\Delta S} = 
+	\frac{nR}{\gamma - 1} \ln\left(\frac{T_B V_B^{\gamma - 1}}{T_A V_A^{\gamma - 1}}\right)}
+\]
+
+Expression de $\underset{A \to B}{\Delta S}$ en variable $ (P, V) $ ou $ (T, P) $

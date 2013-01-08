@@ -1,0 +1,344 @@
+\chapter{Machines Thermiques}
+
+	\section{Introduction}
+	
+				\begin{itemize}
+					\item Moteurs thermiques (essence, diesel, ...)
+					\item Frigo, climatisation
+					\item Pompe à chaleur
+				\end{itemize}
+				
+				\paragraph{Principe de fonctionnement d'un frigo} (Voir \reffig{frigo})
+						
+						\fig{frigo}
+						{Fonctionnement de la machine thermique "Frigo"}				
+
+	\section{Modélisation}
+		\subsection{Définitions}
+		
+				\begin{itemize}
+					\item Source de chaleur et thermostat: cf. Second Principe
+					\item Les sources de chaleur seront ici supposées être des thermostats
+						\[
+							\Rightarrow \Delta S_{\text{source}} = \frac{Q_{\text{source}}}{T_{\text{source}}} \mbox{ Avec: } S^C_{\text{source}} = 0
+						\]
+				\end{itemize}
+				
+				\paragraph{Source méconique:} Tout système qui échange de l'énergie mécanique sans transfert thermique
+				
+				\paragraph{Définition} Une \emph{machine thermique} est un système dans lequel un fluide décrit un cycle
+
+		\subsection{Machine ditherme}
+				Une \emph{machine ditherme} est une machine qui échange de l'énergie thermique avec 2 sources de chaleur (Voir \reffig{machine_ditherme}):
+				\begin{itemize}
+					\item Source chaude à $ T_C $
+					\item Source froide à $ T_f $
+				\end{itemize}
+				Avec $ T_f < T_C $
+						
+						\fig{machine_ditherme}
+						{Fonctionnement d'une machine dithermique}
+								
+				\begin{itemize}
+					\item $ Q_C = $ Chaleur reçue par le fluide de la part de la source \emph{chaude}
+					\item $ Q_f = $ Chaleur reçue par le fluide de la part de la source \emph{froide}
+					\item $ W = $ Travail reçu par le fluide
+				\end{itemize}
+				
+				\paragraph{Exemple du frigo}
+				\[
+				\accolades{ 	Q_C & < & 0\\
+						Q_f & > & 0\\
+						W & > & 0}
+				\]
+				
+				\paragraph{Bilan thermodynamique}:
+				
+				1\ier principe:
+				\[
+					\Delta U_{\text{cycle}} = Q_C + Q_f + W \underbrace{ = 0}_{\text{car U fonction d'état}}
+				\]
+				\[
+					\boxed{Q_C + Q_f + W = 0}
+				\]
+				
+				Second principe:
+				\[
+					\Delta S_{\text{cycle}} \underbrace{= 0}_{\text{car S fonction d'état}} = S^e_{\text{chaud}} + S^e_{\text{froid}} + S^C
+				\]
+				or 
+				\[
+					S^e_{\text{chaud}} = \frac{Q_C}{T_C}
+				\]
+				\[
+					S^e_{\text{froid}} = \frac{Q_f}{T_f}
+				\]
+				
+				On a donc:
+				\[
+					\frac{Q_C}{T_C} + \frac{Q_f}{T_f} + S^C = 0
+				\]
+				\[
+					\Rightarrow \boxed{\frac{Q_C}{T_C} + \frac{Q_f}{T_f} \leq 0}
+				\]
+				
+				\paragraph{Diagramme de Raveau} C'est le diagramme des zones de fonctionnement dans le plan $ Q_C, Q_f $ (Voir \reffig{plan_Qc_Qf})
+				
+						\fig{plan_Qc_Qf}
+						{Plan d'étude d'un diagramme de Raveau}
+																					
+				On a:
+				\[
+					\frac{Q_C}{T_C} + \frac{Q_f}{T_f} \leq 0
+				\]
+				\[
+					\Rightarrow \boxed{Q_C \leq - \frac{T_C}{T_f} Q_f}
+				\]
+				
+				On a un fonctionnement moteur si $ W < 0 $, Or:
+				\[
+					W = - Q_C - Q_f
+				\]
+				\[
+					\Rightarrow \text{Fonctionnement moteur si } -Q_C - Q_f < 0 \Rightarrow \boxed{Q_C > - Q_f}
+				\]
+				On obtient le diagramme \reffig{diagramme_de_raveau}
+				
+						\fig{diagramme_de_raveau}
+						{Diagramme de Raveau}
+				
+				Pour avoir un cycle moteur, il faut:
+				\begin{itemize}
+					\item[$\bullet$] $ Q_C > 0 $ : Le fluide \emph{reçoit} effectivement de l'énergie de la source \emph{chaude}
+					\item[$\bullet$] $ Q_f < 0 $ : Le fluide \emph{donne} effectivement de l'énergie à la source \emph{froide}
+				\end{itemize}
+				
+		\subsection{\'E{}tude des moteurs thermiques}
+				On a:
+				\[
+				\accolades{ 	Q_C & > & 0\\
+						Q_f & < & 0\\
+						W & < & 0}
+				\]
+				
+				\paragraph{Rendement d'un moteur}
+				\[
+					\boxed{\eta = \frac{|W|}{Q_C} = - \frac{W}{Q_C}}
+				\]
+				Or ici
+				\[
+					- W = Q_C + Q_f
+				\]
+				
+				Donc, 
+				\[
+					\eta = \frac{Q_C + Q_f}{Q_C}
+				\]
+				
+				Donc,
+				\[
+					\eta = 1 + \frac{Q_f}{Q_C}
+				\]
+				
+				Or,
+				\begin{eqnarray*}
+					\frac{Q_f}{T_f} + \frac{Q_C}{T_C} 	& \leq &	0\\
+					\frac{Q_f}{T_f}				& \leq &	- \frac{Q_C}{T_C}\\
+					\frac{Q_f}{Q_C}				& \leq &	- \frac{T_f}{T_C}
+				\end{eqnarray*}
+				
+				\[
+					\Rightarrow \boxed{\frac{Q_f}{Q_C}\leq - \frac{T_f}{T_C}}
+				\]
+				
+				On a donc:
+				\[
+					\eta = 1 + \frac{Q_f}{Q_C} \leq 1 - \frac{T_f}{T_C}
+				\]
+				\[
+					\Rightarrow \boxed{\eta \leq \frac{T_C - T_f}{T_C}} = \eta_{\text{max}}
+				\]
+				
+				\paragraph{Exemple} Si:
+				\begin{itemize}
+					\item $ T_f = \SI{20}{\degC}$
+					\item $ T_C = \SI{1000}{\degC} \Rightarrow \eta_{\text{max}} = \SI{77}{\%}$
+				\end{itemize}
+				
+				\paragraph{N.B.} $\eta_{\text{max}} $ est atteint pour des cycles réversibles (qui n'existent pas)
+				
+		\subsection{\'E{}tude des machines frigorifiques}
+				On a:
+				\[
+				\accolades{ 	Q_C & < & 0\\
+						Q_f & > & 0\\
+						W & > & 0}
+				\]
+				
+				\paragraph{\'E{}fficacité}
+				\[
+					\boxed{e = \frac{Q_f}{W}}
+				\]
+				
+				Or,
+				\[
+					W = - Q_C - Q_f
+				\]
+				\[
+					\Rightarrow e = \frac{- Q_f}{Q_C + Q_f} = - \frac{1}{1 + \frac{Q_C}{Q_f}}
+				\]
+				
+				Or,
+				\begin{eqnarray*}
+					\frac{Q_C}{T_C}			& \leq  & - \frac{Q_f}{T_f}\\
+					\frac{Q_C}{Q_f} 			& \leq  & - \frac{T_C}{T_f} \\
+					1 + \frac{Q_C}{Q_f}		& \leq  & 1 - \frac{T_C}{T_f} \\
+					\frac{1}{1 + \frac{Q_C}{Q_f}}	& \geq & \frac{1}{1 - \frac{T_C}{T_f}} = \frac{T_f}{T_f - T_C}\\
+					\Rightarrow e 			&   =    & - \frac{1}{1 + \frac{Q_C}{Q_f}} \leq \frac{T_f}{T_C - T_f}
+				\end{eqnarray*}
+				
+				\[
+					\boxed{e \leq e_{\text{max}} = \frac{T_f}{T_C - T_f}}
+				\]
+				
+				\paragraph{N.B.} Exemple:
+				\begin{itemize}
+					\item $ T_C =\SI{20}{\degC} $
+					\item $ T_f = \SI{0}{\degC} $
+					\item $ e_{\text{max}} = \frac{273}{20} \approx 13.5$
+				\end{itemize}
+				
+				Si $ e = 4 $, cela signifie que pour refroidir le frigo de $ \SI{5}{kJ} $ il faut payer à EDF $ \SI{1.25}{kJ} $
+				
+				\subsection{Pompes à chaleur}
+					\subsubsection{Présentation}
+					
+					Une \emph{pompe à chaleur} "pompe" de l'énergie gratuite à l'extérieur de l'habitation (dans l'air, le sol, de l'eau ...) pour la transporter à l'intérieur de la maison (\reffig{pompe_chaleur})
+					
+					\fig{pompe_chaleur}
+					{Fonctionnement de la machine thermique "Pompe à chaleur"}
+					
+					\subsubsection{Formalisation thermodynamique}
+					
+					\fig{machine_ditherme_2}
+					{Fonctionnement d'une machine dithermique}
+					
+					\begin{itemize}
+						\item Source chaude = intérieur maison
+						\item Source froide = extérieur maison
+					\end{itemize}
+					
+					\[
+						\accolades{ 	Q_C & < & 0\\
+								Q_f & > & 0\\
+								W & > & 0}
+					\]
+				
+					
+					On a:
+					\[
+						\accolades{	W + Q_C + Q_f & = & 0\\
+								\frac{Q_C}{T_C} + \frac{Q_f}{T_f} & \leq & 0}
+					\]
+					
+					\subsubsection{Efficacité de la Pompe à Chaleur (PAC)}
+					
+					On a:
+					
+					\[
+						e = \frac{- Q_C}{W} \text{\space} (Q_C < 0)
+					\]
+					
+					On a de plus:
+					\[
+						W = - Q_C - Q_f
+					\]
+					
+					Donc,
+					\[
+						e = \frac{Q_C}{Q_C + Q_f} = \frac{1}{1 + \frac{Q_f}{Q_C}}
+					\]
+					
+					Or,
+					\begin{eqnarray*}
+						\frac{Q_C}{T_C} + \frac{Q_f}{T_f} & \leq & 0 \\
+						\frac{Q_f}{T_f} & \leq & -\frac{Q_C}{T_C}\\
+						\frac{Q_f}{Q_C} & \geq & - \frac{T_f}{T_C}
+					\end{eqnarray*}
+					
+					Donc,
+					\begin{eqnarray*}
+						1 + \frac{Q_f}{Q_C} & \geq & 1 - \frac{T_f}{T_C} = \frac{T_C - T_f}{T_C}\\
+						e 			   & \leq & e_{\text{max}} = \frac{T_C}{T_C - T_f}
+					\end{eqnarray*}
+					
+					\paragraph{A.N.}
+					\begin{itemize}
+						\item $ T_C = \SI{20}{\degC} $
+						\item $ T_f = \SI{0}{\degC} $
+						\item $ e_{\text{max}} = \frac{293}{20} \approx 15 $
+					\end{itemize}
+					
+					En pratique, $ e \approx 3 \text{ à } 4 $
+					
+					\subsubsection{Exemple}
+					
+					A la construction d'une maison, on doit installer un chauffage. La puissance est de $ \SI{6}{kW} $ en moyenne pendant les six mois les plus froids.
+					
+					Il y a deux possibilités :
+					\begin{itemize}
+						\item Chauffage 100\% électrique : 
+							\subitem Coût d'installation : $ \SI{0}{\euro} $
+							\subitem Coût de maintenance : $ \SI{0}{\euro/an} $
+						\item Pompe à Chaleur, avec une efficacité $ e = 3 $:
+							\subitem Coût d'installation : $ \SI{10000}{\euro} $
+							\subitem Coût de maintenance : $ \SI{400}{\euro/an} $
+					\end{itemize}
+					
+					\paragraph{Question} Au bout de combien de temps la Pompe à Chaleur est "rentable" ?
+					
+					Donnée : $ \SI{1}{kWh} \approx 0,13\euro $
+					
+					\paragraph{Étude du 100\% électrique :}
+					
+					\[
+						\SI{6}{kWh} \times \underbrace{24}_{\SI{24}{h/j}} \times \underbrace{30}_{\SI{30}{j/m}} 
+						\times \underbrace{6}_{\SI{6}{mois}} \times 0,13 = \SI{3370}{\euro/an} 
+					\]
+					
+					\paragraph{Étude de la Pompe à Chaleur :}
+					On a ici :
+					
+					\[
+						e = \frac{P_{\text{chauffage}}}{P_{\text{EDF}}} \Rightarrow P_{\text{EDF}} = \SI{2}{kW}
+					\]
+					
+					\begin{itemize}
+						\item Coût total EDF : $ \SI{1120}{\euro/an} $
+						\item Coût maintenance : $ \SI{400}{\euro/an} $
+						\item Coût total : $ \SI{1520}{\euro/an} $
+					\end{itemize}
+					
+					Il faut donc 6 années et demi pour amortir la pompe à chaleur.
+					
+					\subsection{Cycle de Carnot}
+					
+					\paragraph{Définition} Un cycle de Carnot est composé de 2 isothermes et de 2 adiabatiques (Ce cycle est réversible).
+					
+					\paragraph{N.B.} \emph{Réversible} $ \Rightarrow e $ ou $ \eta $: maximum
+					
+					\paragraph{Représentation dans un diagramme de Clapeyron (\reffig{diagramme_de_clapeyron})}
+					
+					\fig{diagramme_de_clapeyron}
+					{Diagramme de Clapeyron d'un cycle de Carnot}
+					
+					\paragraph{Représentation dans un diagramme entropique (\reffig{diagramme_entropique})}
+					
+					\fig{diagramme_entropique}
+					{Diagramme entropique}
+					
+					\paragraph{Diagramme de Clapeyron} C'est une représentation des transformations quasi-statiques. On peux tracer les courbes selon les cas (voir \reffig{diagramme_de_clapeyron_typique})
+					
+					\fig{diagramme_de_clapeyron_typique}
+					{Courbes d'un diagramme de Clapeyron selon les cas ($A \to B$)}
+

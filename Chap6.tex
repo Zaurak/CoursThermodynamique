@@ -1,0 +1,217 @@
+\chapter{Le corps pur diphasé}
+
+\section{Présentation}
+
+	\subsection{Dans la vie quotidienne}
+	
+	\begin{itemize}
+		\item Eau bouillante: $ \SI{100}{\degC} $ à $ P = \SI{1}{atm} $. On a $ T = \SI{100}{\degC} $  quel que soit la puissance de chauffage. Attention: l'eau est bouillante à $ \SI{95}{\degC} $ à $ \SI{4000}{m}$
+		\item Mélange eau / glace : $ \SI{0}{\degC} $ Avec des pieds dans le mélange la température reste à $ \SI{0}{\degC} $ tant qu'il y a des glaçons.
+		\item Au Moyen Âge: "Chauffage à bassines d'eau". Les bassines d'eau dans le sellier "chauffent" l'air qui est en dessous de $ \SI{0}{\degC} $ 
+		\item Fabrication de sorbets avec une bassine plongée dans un mélange d'eau salée et de glace salée à $ \SI{-3}{\degC} $ (voir \reffig{sorbet_moyen_age})
+		
+		\fig{sorbet_moyen_age}
+		{Fabrication de sorbets au Moyen-Âge}
+		
+		\item Température d'ébullition et de fusion différent selon les corps purs
+	\end{itemize}
+	
+	\subsection{Vocabulaire}
+	
+	Voir \reffig{condensation_sublimation} pour le vocabulaire des changements d'états de la matière.
+	
+	Attention ! Il faut faire attention aux notations : l'enthalpie et l'entropie en \emph{minuscules} ($ h(T), s(T) $) correspondent à l'enthalpie \emph{massique} et à l'entropie \emph{massique}.
+	
+	\fig{condensation_sublimation}
+	{Les changements d'états de la matière}
+	
+	\subsection{Propriétés}
+	
+	A pression constante le changement d'état s'effectue également à température constante. Pour de l'eau bouillante, toute l'énergie apportée sert au changement d'état.
+	
+	On a donc
+	<Laisser de la place ici pour plus tard>
+	
+\section{\'E{}tude thermodynamique}
+
+	\subsection{Enthalpie de changement d'état}
+	
+	\paragraph{Définition} On appelle enthalpie massique de transition de phase, à la température $ T $, l'énergie thermique transférer réversiblement pour faire passer l'unité de masse du corps pur de la phase 1 à la phase 2.
+	
+	Cette grandeur s'exprime en $ \SI{}{J.kg^{-1}} $
+	
+	\[
+		\boxed{\underset{1 \to 2}{\Delta h(T)} = \underset{1 \to 2}{L} = \underbrace{h_2 (T)}_{\text{enthalpie massique à l'état 2}} - \underbrace{h_1 (T)}_{{\text{enthalpie massique à l'état 1}}}}
+	\]
+	
+	
+	
+	\paragraph{N.B.} :
+	\begin{itemize}
+		\item $  \underset{1 \to 2}{L} = \underset{1 \to 2}{\Delta} $ est une grandeur algébrique, positive dans le cas d'un passage d'un état à un état plus désordonné.
+		\item Quelques valeurs:
+	\end{itemize}
+	
+	\[
+	\begin{tabular}{c| c c c c}
+				&	$T_f (K)$	&	$L_f (kJ.kg^{-1})$	&	$T_V (K)$	&	$L_V (kJ.kg^{-1})$	\\
+				\hline
+		$H_2O$	&	273		&	334			&	373		&	2257			\\
+		$O_2$	&	54		&	14			&	90		&	213			\\
+		$NH_3$	&	198		&	452			&	258		&	1369			\\
+	\end{tabular}
+	\]
+	
+	\subsection{Entropie de changement d'état}
+	
+	Le changement d'état peut être considéré comme réversible. On a donc:
+	
+	\[
+		\boxed{
+		\underset{1 \to 2}{\Delta s(T)} = 
+		s_2(T) - s_1(T) =  
+		\frac{{L_{1 \to 2} (T)} }{T}
+		}
+	\]
+	
+	\paragraph{Exemple} Pour l'eau:
+	
+	\[
+		\underset{S \to L}{\Delta s(\SI{273}{K})} = \SI{1.22}{kJ.K{-1}.kg^{-1}}
+	\]
+	
+	\[
+		\underset{L \to V}{\Delta s(\SI{373}{K})} = \SI{6.05}{kJ.K{-1}.kg^{-1}}
+	\]
+	
+	On a:
+	\[
+		\underset{S \to L}{\Delta s} \mbox{ et } \underset{L \to V}{\Delta s} > 0
+	\]
+	
+	C'est normal, car le désordre augmente.
+
+	\section{Diagramme de changement d'états}
+		\subsection{Isothermes et diagrammes (P, V)}
+		
+		<Insérer diagramme>
+		
+		Isotherme à température telle que $T_1 < T_2 < T_3 < T_C < T_4$
+		
+		\paragraph{Zone 1}: de $A_0$ à $A_2$
+		\begin{itemize}
+			\item Fortement compressible ($P$ augmente peu avec $v$)
+			\item Milieu gazeux
+			\item En $A_2$ apparition de la première goutte de liquide
+		\end{itemize}
+		
+		\paragraph{Zone 2}: de $A_2$ à $A_4$
+		\begin{itemize}
+			\item $P$ reste constante avec $v$ diminuant. Le changement d'état a lieu quand on comprime le gaz qui devient liquide.
+			\item On a coexistence ddes 2 états liquides et vapeur
+			\item En $A_2 \approx 100\% $ gaz mais en $A_n \approx 100\%$ liquide.
+			\item En $A_2$ apparition de la première goutte de liquide
+		\end{itemize}
+		
+		\paragraph{Zone 3}: de $A_4$ à $A_6$
+		\begin{itemize}
+			\item Faible compressibilité (il faut augmenter beaucoup $P$ pour obtenir une faible diminution de $v$)
+			\item On est ici $100\%$ liquide (phase condensés)
+		\end{itemize}
+		
+		\paragraph{N.B.} Si $T^\prime > T$ On a la même allure d'isotherme. 
+		Mais si $T^\prime > T_C$ on n'a plus le palier de \emph{transition de phase}.
+		
+		\subsection{Diagramme (P, T)}
+		
+		<Insérer diagramme>
+		
+		Les courbes représentent les changements d'état.
+		
+		\paragraph{Courbe 1}: équilibre solide / liquide
+		\begin{itemize}
+			\item Pente positive très raide, illimités vers les hautes pressions.
+			\item La température de fusion varie peu avec la pression
+		\end{itemize}
+		
+		\paragraph{Courbe 2}: équilibre solide / vapeur
+		\begin{itemize}
+			\item Pente positive
+		\end{itemize}
+		
+		\paragraph{Courbe 3}: équilibre liquide / vapeur
+		\begin{itemize}
+			\item Limité par le point C (point critique) au delà duquel on n'a plus de transition de phase.
+			\item On parle de fluide \emph{hypercritique}
+			\item Pente positive $\Rightarrow$ température d'ébullition augmente avec $P$
+		\end{itemize}
+		
+		\paragraph{Point T}: Au point triple, les trois phases cohabitent.
+		
+		<Tableau ici>
+		\[
+		\begin{tabular}{c| c c c c}
+					&	Point	&	Triple&	Point &	Critique\\
+					\hline
+		\end{tabular}
+		\]
+		
+		\paragraph{Cas de l'eau}
+		<insérer schéma>
+		
+		En comprimant de la glace, on la fait fondre.
+		
+		\paragraph{Lien entre les 2 diagrammes}
+		<Diagramme>
+		
+		\section{Grandeurs massiques}
+			\subsection{Définition}
+			
+			On considère un équilibre liquide / vapeur. On a:
+			\[
+				m = m_V + m_L
+			\]
+			
+			Avec:
+			\begin{itemize}
+				\item $m$ : masse totale
+				\item $m_V$ : masse de vapeur
+				\item $m_L$ : masse de liquide
+			\end{itemize}
+			
+			On définit:
+			\[
+				\boxed{x = \frac{m_V}{m} = \text{Titre massique en vapeur}}
+			\]
+			
+			\subsection{Grandeurs massiques}
+			
+			Soit un mélange liquide / vapeur à la température $T$.
+
+			Calculons $h(x, T) =$ enthalpie massique à la température $T$ pour une proportion $x$ de vapeur.
+			
+			Soit une masse $m$ du mélange, on a:
+			\begin{align*}
+				H(x, T)	& = m h(x, T) \\
+						& = H_V(x, T) + H_L(x, T) \\
+						& = m_V h_V(T) + m_L h_L(T)
+			\end{align*}
+			
+			\begin{align*}
+				h(x, T) 	& = 	\underbrace{\frac{m_V}{m}}_{x} h_V(T) + 
+							\underbrace{\frac{m_L}{m}}_{\frac{m - m_V}{m} = 1 - x} h_L (T) \\
+						& = x h_V(T) + (1 - x) h_L(T) \\
+			\end{align*}
+			
+			On a donc :
+			\[
+				\boxed{h(x, T) = \Big[ h_V(T) - h_L(T)\Big] x + h_L(T)}
+			\]
+			
+			\paragraph{N.B.}
+			\begin{itemize}
+				\item Si $ x = 0 $ ($100 \%$ liquide) $h(0, T) = h_L(T) \Rightarrow $ Logique
+				\item Si $ x = 1 $ ($100 \%$ vapeur) $h(1, T) = h_V(T) \Rightarrow $ Logique
+				\item On peut généraliser pour $ u(x, T), \theta(x, T), s(x, T), ...$
+			\end{itemize}
+			
