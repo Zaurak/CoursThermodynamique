@@ -21,9 +21,10 @@
 <node CREATED="1357664853463" ID="ID_207542031" MODIFIED="1357668859158" TEXT="Largeur du document &#xe0; 80 chars par ligne"/>
 </node>
 </node>
-<node CREATED="1357668365399" ID="ID_1954031981" MODIFIED="1357668393464" POSITION="left" TEXT="Clart&#xe9; du support">
+<node CREATED="1357668365399" ID="ID_1954031981" MODIFIED="1357678582913" POSITION="left" TEXT="Clart&#xe9; du support">
 <node CREATED="1357668402135" ID="ID_1527465693" MODIFIED="1357668799250" TEXT="Ajouter des explications sur les &#xe9;quations"/>
 <node CREATED="1357668460268" ID="ID_1567903129" MODIFIED="1357668714937" TEXT="Ajouter des sch&#xe9;mas"/>
+<node CREATED="1357678585673" ID="ID_407782652" MODIFIED="1357678594080" TEXT="Ajouter en annexes des fiches r&#xe9;sum&#xe9;s"/>
 </node>
 </node>
 </map>
