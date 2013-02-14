@@ -1,289 +1,362 @@
 \chapter{Bases de la thermodynamique}
 
-	\section{Introduction}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%			Introduction				%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction}
 
-				\paragraph{Exemple 1}
-				Un paquet de chips gonfle en altitude car les molécules du gaz intérieur du paquet prennent plus de place. En effet, il y a moins de pressions à l'extérieur de paquet car la pression $ P(z) $ diminue quand la l'altitude $z$ augmente.
-				(Voir \reffig{paquet_de_chips}).
-				
-						\fig{paquet_de_chips}
-						{Augmentation de l'altitude sur un paquet de chips}
-								
-				\paragraph{Exemple 2}
-				Dans l'amphithéâtre, la température de la table en bois est différente de celle de la barre en métal. En effet, le bois conduit moins bien la chaleur que le métal.
-				Attention! La température et l'énergie sont deux notions différentes !
-				
-				\paragraph{Exemple 3}
-				La cuisson d'une pizza se fait sur une feuille d'aluminium que l'on peut saisir à mains nues et non sur une plaque de métal.
-				En effet, la capacité thermique de la feuille d'aluminium, c'est-à-dire la capacité d'un système à stocker l'énergie sous forme thermique, est moindre.
-				On peut également cité l'exemple du sauna: humidifier l'air d'un sauna augmente sa capacité thermique, ce qui peut vite le rendre invivable !
-				
-				\paragraph{Exemple 4}
-				Pour refroidir une bouteille de soda rapidement, on peut la plonger dans de l'eau froide 
-				(avec de la glace par exemple car un mélange d'eau et de glace garantit une eau constament à $\SI{0}{\degC}$).
-				Les échanges de chaleurs se feront alors avec l'eau plutôt qu'avec de l'air, ce qui ira plus vite.
-				
-				\paragraph{Exemple 5}
-				Une cocotte-minute accélère le chauffage des aliments grâce à son milieu étanche permettant une augmentation de la pression et donc une augmentation de la température d'ébullition.
-				($ P \nearrow \Rightarrow T_{\text{ébullition}} \nearrow $)
-				
-	\section{\'E{}tat de la matière}
+\paragraph{Exemple 1}
+Un paquet de chips gonfle en altitude car les molécules du gaz intérieur du paquet prennent 
+plus de place. En effet, il y a moins de pressions à l'extérieur du paquet car la pression 
+$ P(z) $ diminue quand l'altitude $z$ augmente.
+(Voir \reffig{paquet_de_chips}).
 
-		\subsection{Le corps pur}
+
+    \fig{paquet_de_chips}
+    {Augmentation de l'altitude sur un paquet de chips}
+
+\paragraph{Exemple 2}
+Dans l'amphithéâtre, la température de la table en bois est différente de celle de la 
+barre en métal. En effet, le bois conduit moins bien la chaleur que le métal.
+Attention! La température et l'énergie sont deux notions différentes !
+
+\paragraph{Exemple 3}
+La cuisson d'une pizza se fait sur une feuille d'aluminium que l'on peut saisir à mains 
+nues et non sur une plaque de métal.
+En effet, la capacité thermique de la feuille d'aluminium, c'est-à-dire la capacité 
+d'un système à stocker l'énergie sous forme thermique, est moindre.
+On peut également cité l'exemple du sauna: humidifier l'air d'un sauna augmente sa 
+capacité thermique, ce qui peut vite le rendre invivable !
+
+\paragraph{Exemple 4}
+Pour refroidir une bouteille de soda rapidement, on peut la plonger dans de l'eau froide
+(avec de la glace par exemple car un mélange d'eau et de glace garantit une eau 
+ constamment à $\SI{0}{\degC}$).
+Les échanges de chaleurs se feront alors avec l'eau plutôt qu'avec de l'air, ce qui ira 
+plus vite.
+
+\paragraph{Exemple 5}
+Une cocotte-minute accélère le chauffage des aliments grâce à son milieu étanche permettant 
+une augmentation de la pression et donc une augmentation de la température d'ébullition.
+($ P \nearrow \Rightarrow T_{\text{ébullition}} \nearrow $)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%			État de la matière			%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{État de la matière}
+
+\subsection{Le corps pur}
+
+\paragraph{Définition}
+Un \emph{corps pur} est un constituant unique caractérisé par une formule chimique définie.
+
+\paragraph{Exemples}
+\[ 
+    He_{(g)}, 
+    Fe_{(s)},
+    {NH_3}_{(l)},
+    {O_{2}}_{(g)}, ...
+\]
+Souvent on travaille avec des mélanges (comme l'air)
+
+\subsection{Les différents états d'un corps pur}
+
+\subsubsection{Phase solide}
+\begin{itemize}
+	\item État compact dont le modèle idéal est la cristal parfait
+	\item Distance interparticules faibles et interactions fortes 
+		$ \Rightarrow $ cohésion et rigidité
+	\item Les solides ont un volume propre et ne peuvent pas s'écouler
+	\item Quasi-incompressible et peu dilatable
+\end{itemize}
+
+\subsubsection{Phase liquide}
+\begin{itemize}
+	\item Particules sont en contact mais les intéractions moins fortes 
+		$ \Rightarrow $ mouvement possible
+	\item Ils ont un volume propre mais prennent la forme d'un récipient
+	\item Quasi-compressible et peu dilatable
+\end{itemize}
+
+\subsubsection{Phase gazeuse}
+\begin{itemize}
+	\item C'est l'état dispersé de la matière. Les particules sont quasi-libres
+	\item Les particules sont soumises à l'agitation thermique
+	\item Peuvent se dilater ou se comprimer facilement
+\end{itemize}
+
+\subsection{L'état condensé}
+
+\paragraph{Définition} \emph{\'E{}tat condensé}:\\
+Phase solide ou phase liquide quasi-incompressible.
+
+\paragraph{N.B.} Les solides et les liquides ont leur volume qui varie peu avec la température et quasi-pas avec la pression.
+
+\paragraph{Caractéristiques}
+
+\begin{itemize}
+	\item[$\bullet$] Masse volumique:
 	
-				\paragraph{Définition}
-				Un \emph{corps pur} est un constituant unique caractérisé par une formule chimique définie.
-				
-				\paragraph{Exemples}
-				\[ 
-				 	He_{(g)}, 
-				 	Fe_{(s)},
-				 	{NH_3}_{(l)},
-				 	{O_{2}}_{(g)}, ...
-				\]
-				Souvent on travaille avec des mélanges (comme l'air)
-		
-		\subsection{Les différents états d'un corps pur}
-		
-			\subsubsection{Phase solide}
-				\begin{itemize}
-					\item \'E{}tat compact dont le modèle idéal est la cristal parfait
-					\item Distance interparticules faibles et interactions fortes $ \Rightarrow $ cohésion et rigidité
-					\item Les solides ont un volume propre et ne peuvent pas s'écouler
-					\item Quasi-incompressible et peu dilatable
-				\end{itemize}
-			
-			\subsubsection{Phase liquide}
-				\begin{itemize}
-					\item Particules sont en contact mais les intéractions moins fortes $ \Rightarrow $ mouvement possible
-					\item Ils ont un volume propre mais prennent la forme d'un récipient
-					\item Quasi-compressible et peu dilatable
-				\end{itemize}
-			
-			\subsubsection{Phase gazeuse}
-				\begin{itemize}
-					\item C'est l'état dispersé de la matière. Les particules sont quasi-libres
-					\item Les particules sont soumises à l'agitation thermique
-					\item Peuvent se dilater ou se comprimer facilement
-				\end{itemize}
-		
-		\subsection{L'état condensé}
-		
-				\paragraph{Définition} \emph{\'E{}tat condensé}:\\
-						Phase solide ou phase liquide quasi-incompressible.
-				
-				\paragraph{N.B.} Les solides et les liquides ont leur volume qui varie peu avec la température et quasi-pas avec la pression.
-				
-				\paragraph{Caractéristiques}
-				
-				\begin{itemize}
-					\item[$\bullet$] Masse volumique:				  
-					    \[
-					    \rho = \frac{m}{V}
-					    \]
-				
-					Avec:
-				
-						\subitem $ \rho $ : masse volumique en $ \SI{}{kg.m^{-3}} ( \rho_{\mathrm{eau}} = \SI{10^{3}}{kg.m^{-3}} $ )
-						\subitem $ m $ : masse en \SI{}{kg}
-						\subitem $ V $ : volumue en \SI{}{m^3}
-				
-					\item[$\bullet$] Densité:				  
-					    \[
-					    d = \frac{\rho}{\rho_{\mathrm{eau}}}
-					    \]
-				
-					Avec:
-						\subitem $ d $ : densité (rapport sans unité)
-						\subitem $ \rho $ : masse volumique en $ \SI{}{kg.m^{-3}} $
-						\subitem $ \rho_{\mathrm{eau}} $ : masse volumique de l'eau ($\SI{10^{3}}{kg.m^{-3}}$)
-				\end{itemize}
-				
-			\subsection{\'E{}tat fluide}
-			
-				\paragraph{Définition} \emph{\'E{}tat Fluide}:\\
-					Gaz (compressible) ou liquide (incompressible).
-				
-				\paragraph{N.B.}	$ \rho_{air} \approx \SI{1.3}{kg.m^{-3}} (\rho_{gaz} $ typiquement $ \SI{1}{kg.m^{-3}}) $
-				
-				\paragraph{Quantité molaire}
-									
-				\begin{itemize}
-					\item Une mole de gaz contient $ N_A = \SI{6,022.10^{23}}{\mbox{molécules}} $ % mbox est ici nécessaire pour faire passer l'accent
-					\item On a:
-					    \[
-					    n = \frac{N}{N_A}
-					    \]
-					Avec:
-						\subitem $ n $ : Quantité molaire
-						\subitem $ N $ : Nombre de molécules
-						\subitem $ N_A $ : Nombre d'Avogadro
-					\item On considère usuellement le volume molaire d'un gaz parfait à:
-						\subitem $ P = \SI{10^{5}}{Pa} $ ( soit $ \SI{1}{\mbox{bar}} $)
-						\subitem $ T = \SI{25}{\degC} $
-						\subitem $ V_m = \SI{22.4}{L.mol^{-1}} $ ( Volume molaire dans les conditions usuelles de température et de pression )
-						
-						En effet, on a $ \displaystyle{PV = nRT \Rightarrow V_m = \frac{RT}{P} = \SI{22.7}{L.mol^{-1}}} $
-				\end{itemize}
-				
-	\section{\'E{}chelles d'études}
+	\EquationCarac
+	{
+		\[
+			\rho = \frac{m}{V}
+		\]
+	}
+	{
+		\begin{description}
+			\item[$ \rho $] : masse volumique en $ \SI{}{kg.m^{-3}} $
+				 ( $ \rho_{\mathrm{eau}} = \SI{10^{3}}{kg.m^{-3}} $ )
+			\item[$ m $] : masse en \SI{}{kg}
+			\item[$ V $] : volumue en \SI{}{m^3}
+		\end{description}
+	}
+	\item[$\bullet$] Densité:
 
-				\begin{itemize}
-					\item \'E{}chelle microscopique ou moléculaire:
-					
-					On a $ \SI{1}{L} \rightarrow 10^{22} $ particules $ \rightarrow $ Complexe à étudier (trop d'équations et de conditions initiales)
-					\item \'E{}chelle macroscopique:
-					
-					ex: Pression et température dans une seringue
-					\item \'E{}chelle mésoscopique:
-					
-					ex: Température dans l'amphithéâtre: $ T(z, t) $
-				\end{itemize}
+	\EquationCarac
+	{
+		\[
+			d = \frac{\rho}{\rho_{\mathrm{eau}}}
+		\]
+	}
+	{
+		\begin{description}
+			\item[$ d $] : densité (rapport sans unité)
+			\item[$ \rho $] : masse volumique en $ \SI{}{kg.m^{-3}} $
+			\item[$ \rho_{\mathrm{eau}} $] : masse volumique de l'eau 
+				( $\SI{10^{3}}{kg.m^{-3}}$)
+		\end{description}
+	}
+\end{itemize}
 
-	\section{Grandeurs thermodynamiques}
+\subsection{\'E{}tat fluide}
 
-		\subsection{Vocabulaire}
-		
-				Un \emph{système thermodynamique} est délimité par une surface fermée $ \Sigma $ (réelle ou fictive). À travers $ \Sigma $ se produisent des transferts d'énergie ou de matière.
+\paragraph{Définition} \emph{\'E{}tat Fluide}:\\
+Gaz (compressible) ou liquide (incompressible).
 
-				\emph{Système fermé}: Aucun transfert de matière ne peut avoir lieu (ex: ballon de foot)
-				
-				\emph{Système ouvert}: Transfert de matière possible (ex: seringue)
-				
-				\emph{Système adiabatique}: Pas de transfert thermique (ex: thermos)
-				
-				\emph{Système isolé}: Pas de transfert d'énergie ou de matière.
-		
-		\subsection{\'E{}quilibre thermodynamique}
-		
-				\paragraph{Définition}
-				Dans un système thermodynamique à l'équilibre, les différentes grandeurs définies à l'échelle mésoscopique sont constantes.
-				
-				\paragraph{Exemple}
-				Champs de pression dans un fluide.
-				
-				\paragraph{Propriété}
-				L'expérience prouve que tout système isolé tend vers un état d'équilibre.
-		
-		\subsection{\'E{}quations d'état}
-		
-			\subsubsection{Paramètres d'état}
-			
-				\paragraph{Définition}
-				Les grandeurs macroscopiques susceptibles d'être modifiées lors d'une transformation d'un système sont les \emph{paramètres d'état}.
-			
-			\subsubsection{Grandeurs intensives et grandeurs extensives}
-			
-				\paragraph{Définition}
-				\begin{itemize}
-					\item Les \emph{grandeurs extensives} sont liées à la quantité de matière
-					\item Les \emph{grandeurs intensives} ne sont pas liées à la quantité de matière
-				\end{itemize}
-				
-				\paragraph{Exemples}
-				\begin{itemize}
-					\item Grandeurs extensives
-						\subitem $ m $
-						\subitem $ V $
-						\subitem $ n $
-					\item Grandeurs intensives
-						\subitem $ Q $
-						\subitem $ T $
-						\subitem $ C (mol.L^{-1}) $
-				\end{itemize}
-				
-				\paragraph{Astuce}
-				Imaginez regrouper 2 systèmes identiques:
-				\begin{itemize}
-					\item Ce qui double $ \Rightarrow $ Grandeurs extensives
-					\item Ce qui ne bouge pas $ \Rightarrow $ Grandeurs intensives
-				\end{itemize}
-				
-			\subsubsection{Notion de phase}
-				
-				\paragraph{Définition}
-				Une \emph{phase} correspond à toute partie d'un système dont les grandeurs intensives sont des fonctions continues des variables d'espace.
-				
-				\paragraph{Exemple 1} (\reffig{bouteille_3_phases})
-				
-						\fig{bouteille_3_phases}
-						{Les 3 phases d'une bouteille (air + huile + vinaigre)}
+\paragraph{N.B.}
+$ \rho_{air} \approx \SI{1.3}{kg.m^{-3}} (\rho_{gaz} $ typiquement 
+$ \SI{1}{kg.m^{-3}}) $
 
-				Ici, la masse volumique est discontinue lors des changements de phase.
-						
-				\paragraph{Exemple 2} (\reffig{bouteille_5_phases})
-						
-						\fig{bouteille_5_phases}
-						{Les 5 phases d'une bouteille (air + huile + vinaigre + 2 cailloux)}
-				
-				\paragraph{Définition}
-				La relation entre les paramètres d'état est l'\emph{équation d'état}
-				
-				\paragraph{Exemples}
-				
-				\begin{itemize}
-					\item \'E{}quation d'état des gaz parfaits:
-					    \[
-						    \boxed{PV = nRT}
-					    \]
-					\item \'E{}quation d'état du gaz de Van der Waals:
-					    \[				
-						    \boxed{\left( P + \frac{n^2 a}{V^2} \right) \left( V - nb \right) = nRT}
-					    \]
-				\end{itemize}
+\paragraph{Quantité molaire}
+    
+\begin{itemize}
+	\item Une mole de gaz contient 
+		$ N_A = \SI{6,022.10^{23}}{\mbox{molécules}} $
+	\item On a:
 
-	\section{Le gaz parfait}
+	\EquationCarac
+	{
+		\[
+			n = \frac{N}{N_A}
+		\]
+	}
+	{
+		\begin{description}
+			\item[$ n $] : Quantité molaire
+			\item[$ N $] : Nombre de molécules
+			\item[$ N_A $] : Nombre d'Avogadro
+		\end{description}
+	}
 
-				\paragraph{Définition}
-				Le \emph{gaz parfait} est un gaz constitué d'un ensemble d'atomes:
-				\begin{itemize}
-					\item Considérés comme des particules ponctuelles
-					\item Sans intéractions entre eux
-					\item Dont les chocs entre eux sont parfaitement élastiques
-				\end{itemize}
-				
-				\paragraph{Amélioration du modèle du gaz parfait}
-				Pour le gaz de Van der Waals:
-				\[
-					\left[P + \frac{n^2 a}{V^2}\right] \left[V - nb\right] = n R T
-				\]
-				
-				Avec:
-				\begin{itemize}
-					\item $ b $ : rend compte du volume des particules
-					\item $ a $ : rend compte du fait que les atomes d'un gaz interagissent entre eux
-				\end{itemize}
-				
+	\item On considère usuellement le volume molaire d'un gaz parfait dans 
+		les conditions usuelles de températures et de pression à : 
 	
-	\section{Dilatation et compressibilité d'un système}
-				\begin{itemize}
-					\item Coefficient de dilatation isobare:
-					    \[
-						    \boxed{\alpha = \frac{1}{V} \left( \frac{\partial V}{\partial T} \right)_P}
-					    \]
-					\item Coefficient de compressibilité isotherme:
-					    \[
-						\boxed{\chi_{T} = - \frac{1}{V} \left( \frac{\partial V}{\partial P} \right)_T}
-					    \]
-					\item Coefficient de variation de pression isochore:
-					    \[
-						    \boxed{\beta = \frac{1}{P} \left( \frac{\partial P}{\partial T} \right)_V}
-					    \]
-				\end{itemize}
-				\paragraph{N.B.} Ces coefficients permettent de caractériser les variations dans un système.
-			
-				\paragraph{Exemple}
-				Pour un gaz parfait, déterminons $ \alpha $ :
-				\begin{align*}
-				   PV								& = nRT \\
-				   \Rightarrow V						& = \frac{nRT}{P} \\
-				   \Rightarrow \left(\frac{\partial V}{\partial T} \right)_P 	& = \frac{nR}{P} \\
-				   								& = \frac{V}{T} \\i
-				   \Rightarrow \alpha						& = \frac{1}{V} \left(\frac{\partial V}{\partial T} \right)_P \\
-				   \Rightarrow \alpha						& = \frac{1}{T} \\
-				\end{align*}
-				
-				De la même manière, on trouve:
-				\[
-					\chi_T = \frac{1}{P}
-				\]
+		\begin{flalign*}[left=\empheqlbrace]
+			&	P	= \SI{10^{5}}{Pa}			&&  \text{( soit $ \SI{1}{bar} $ )} \\
+			&	T	= \SI{25}{\degC}			&& \\
+			&	V_m = \SI{22.4}{L.mol^{-1}}		&& 
+				\text{(Volume molaire dans ces conditions usuelles )} 
+		\end{flalign*} 
+
+\end{itemize}
+
+En effet, on a 
+\[
+	PV = nRT \Rightarrow V_m = \frac{RT}{P} = \SI{22.7}{L.mol^{-1}}
+\]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%			Échelles d'études			%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Échelles d'études}
+
+\begin{itemize}
+	\item Échelle microscopique ou moléculaire:\\
+		On a $ \SI{1}{L} \rightarrow 10^{22} $ particules $ \rightarrow $ 
+		Complexe à étudier (trop d'équations et de conditions initiales)
+
+	\item Échelle macroscopique:\\
+		ex: Pression et température dans une seringue
+
+	\item Échelle mésoscopique:\\
+		ex: Température dans l'amphithéâtre: $ T(z, t) $
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%		Grandeurs thermodynamiques		%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Grandeurs thermodynamiques}
+
+\subsection{Vocabulaire}
+
+Un \emph{système thermodynamique} est délimité par une surface fermée $ \Sigma $ 
+(réelle ou fictive). À travers $ \Sigma $ se produisent des transferts d'énergie 
+ou de matière.
+
+\begin{description}
+	\item[Système fermé]: Aucun transfert de matière ne peut avoir lieu 
+		(ex: ballon de foot)
+	\item[Système ouvert]: Transfert de matière possible 
+		(ex: seringue)
+	\item[Système adiabatique]: Pas de transfert thermique 
+		(ex: thermos)
+	\item[Système isolé]: Pas de transfert d'énergie ou de matière.
+\end{description}
+
+\subsection{Équilibre thermodynamique}
+
+\paragraph{Définition}
+Dans un système thermodynamique à l'équilibre, les différentes grandeurs définies 
+à l'échelle mésoscopique sont constantes.
+
+\paragraph{Exemple} Champs de pression dans un fluide.
+
+\paragraph{Propriété} 
+L'expérience prouve que tout système isolé tend vers un état d'équilibre.
+
+\subsection{Équations d'état}
+
+\subsubsection{Paramètres d'état}
+
+\paragraph{Définition}
+Les grandeurs macroscopiques susceptibles d'être modifiées lors d'une transformation d'un système sont les \emph{paramètres d'état}.
+
+\subsubsection{Grandeurs intensives et grandeurs extensives}
+
+\paragraph{Définition}
+\begin{itemize}
+	\item Les \emph{grandeurs extensives} sont liées à la quantité de matière
+	\item Les \emph{grandeurs intensives} ne sont pas liées à la quantité de matière
+\end{itemize}
+
+\paragraph{Exemples}
+\begin{itemize}
+	\item Grandeurs extensives
+		\subitem $ m $
+		\subitem $ V $
+		\subitem $ n $
+	\item Grandeurs intensives
+		\subitem $ Q $
+		\subitem $ T $
+		\subitem $ C (mol.L^{-1}) $
+\end{itemize}
+
+\paragraph{Astuce} Imaginez regrouper 2 systèmes identiques:
+\begin{itemize}
+	\item Ce qui double $ \Rightarrow $ Grandeurs extensives
+	\item Ce qui ne bouge pas $ \Rightarrow $ Grandeurs intensives
+\end{itemize}
+
+\subsubsection{Notion de phase}
+
+\paragraph{Définition}
+Une \emph{phase} correspond à toute partie d'un système dont les grandeurs intensives 
+sont des fonctions continues des variables d'espace.
+
+\paragraph{Exemple 1} (\reffig{bouteille_3_phases})
+
+\fig{bouteille_3_phases}
+{Les 3 phases d'une bouteille (air + huile + vinaigre)}
+
+Ici, la masse volumique est discontinue lors des changements de phase.
+
+\paragraph{Exemple 2} (\reffig{bouteille_5_phases})
+
+\fig{bouteille_5_phases}
+{Les 5 phases d'une bouteille (air + huile + vinaigre + 2 cailloux)}
+
+\paragraph{Définition}
+La relation entre les paramètres d'état est l'\emph{équation d'état}
+
+\paragraph{Exemples}
+
+\begin{itemize}
+	\item Équation d'état des gaz parfaits:
+		\[
+			\boxed{PV = nRT}
+		\]
+	\item Équation d'état du gaz de Van der Waals:
+		\[				
+			\boxed{\left( P + \frac{n^2 a}{V^2} \right) \left( V - nb \right) = nRT}
+		\]
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%			Le gaz parfait				%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Le gaz parfait}
+
+\paragraph{Définition}
+Le \emph{gaz parfait} est un gaz constitué d'un ensemble d'atomes:
+\begin{itemize}
+	\item Considérés comme des particules ponctuelles
+	\item Sans intéractions entre eux
+	\item Dont les chocs entre eux sont parfaitement élastiques
+\end{itemize}
+
+\paragraph{Amélioration du modèle du gaz parfait} Pour le gaz de Van der Waals:
+
+\EquationCarac
+{
+	\[
+		\left[P + \frac{n^2 a}{V^2}\right] \left[V - nb\right] = n R T
+	\]
+}
+{
+	\begin{description}
+		\item[$ a $] : rend compte de l'interaction entre les atomes d'un gaz
+		\item[$ b $] : rend compte du volume des particules
+	\end{description}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%	Dilatation et compressibilité d'un système	%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Dilatation et compressibilité d'un système}
+\begin{itemize}
+	\item Coefficient de dilatation isobare:
+		\[
+			\boxed{\alpha = \frac{1}{V} \left( \frac{\partial V}{\partial T} \right)_P}
+		\]
+	\item Coefficient de compressibilité isotherme:
+		\[
+			\boxed{\chi_{T} = - \frac{1}{V} \left( \frac{\partial V}{\partial P} \right)_T}
+		\]
+	\item Coefficient de variation de pression isochore:
+		\[
+			\boxed{\beta = \frac{1}{P} \left( \frac{\partial P}{\partial T} \right)_V}
+		\]
+\end{itemize}
+
+\paragraph{N.B.} Ces coefficients permettent de caractériser les variations dans un système.
+
+\paragraph{Exemple}
+Pour un gaz parfait, déterminons $ \alpha $ :
+\begin{flalign*}
+	 PV & = nRT && \\
+	\Rightarrow V & = \frac{nRT}{P} && \\
+	\Rightarrow \left(\frac{\partial V}{\partial T} \right)_P & = \frac{nR}{P} && \\
+	& = \frac{V}{T} && \\
+\end{flalign*}
+\begin{flalign*}
+	\Rightarrow \alpha & = \frac{1}{V} \left(\frac{\partial V}{\partial T} \right)_P && \\
+	\Rightarrow \alpha & = \frac{1}{T} && \\
+\end{flalign*}
+
+De la même manière, on trouve:
+\[
+	\chi_T = \frac{1}{P}
+\]

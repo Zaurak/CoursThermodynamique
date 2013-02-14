@@ -10,7 +10,7 @@
 \contentsline {paragraph}{Exemple 3}{2}{section*.8}
 \contentsline {paragraph}{Exemple 4}{2}{section*.9}
 \contentsline {paragraph}{Exemple 5}{2}{section*.10}
-\contentsline {section}{\numberline {1.2}\'E{}tat de la mati\`ere}{2}{section.1.2}
+\contentsline {section}{\numberline {1.2}\'Etat de la mati\`ere}{2}{section.1.2}
 \contentsline {subsection}{\numberline {1.2.1}Le corps pur}{2}{subsection.1.2.1}
 \contentsline {paragraph}{D\'efinition}{2}{section*.11}
 \contentsline {paragraph}{Exemples}{2}{section*.12}
@@ -26,14 +26,14 @@
 \contentsline {paragraph}{D\'efinition}{3}{section*.19}
 \contentsline {paragraph}{N.B.}{3}{section*.20}
 \contentsline {paragraph}{Quantit\'e molaire}{3}{section*.21}
-\contentsline {section}{\numberline {1.3}\'E{}chelles d'\'etudes}{4}{section.1.3}
+\contentsline {section}{\numberline {1.3}\'Echelles d'\'etudes}{4}{section.1.3}
 \contentsline {section}{\numberline {1.4}Grandeurs thermodynamiques}{4}{section.1.4}
 \contentsline {subsection}{\numberline {1.4.1}Vocabulaire}{4}{subsection.1.4.1}
-\contentsline {subsection}{\numberline {1.4.2}\'E{}quilibre thermodynamique}{4}{subsection.1.4.2}
+\contentsline {subsection}{\numberline {1.4.2}\'Equilibre thermodynamique}{4}{subsection.1.4.2}
 \contentsline {paragraph}{D\'efinition}{4}{section*.22}
 \contentsline {paragraph}{Exemple}{4}{section*.23}
 \contentsline {paragraph}{Propri\'et\'e}{4}{section*.24}
-\contentsline {subsection}{\numberline {1.4.3}\'E{}quations d'\'etat}{5}{subsection.1.4.3}
+\contentsline {subsection}{\numberline {1.4.3}\'Equations d'\'etat}{5}{subsection.1.4.3}
 \contentsline {subsubsection}{Param\`etres d'\'etat}{5}{section*.25}
 \contentsline {paragraph}{D\'efinition}{5}{section*.26}
 \contentsline {subsubsection}{Grandeurs intensives et grandeurs extensives}{5}{section*.27}

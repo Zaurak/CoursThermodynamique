@@ -50,6 +50,7 @@
 \usepackage{amsmath}			% Fonctions mathématiques évoluées
 \usepackage{amssymb}			% Symboles mathématiques évoluées
 \usepackage{sistyle}			% Valeurs avec unités du Système Inter
+\usepackage[overload]{empheq}	% Utile pour des équations avec accolades
 
 %%%%% Packages développeurs %%%%%
 \usepackage{listings}			% Codes sources formatés
@@ -94,6 +95,20 @@
 \newcommand{\accolades}[1]
 {\left \{ \begin{array}{l c r} #1 \end{array} \right. }
 
+% Met l'équation à gauche et une description à gauche
+\newcommand{\EquationCarac}[2]
+{
+	\medskip
+	\noindent\begin{minipage}{0.4\linewidth}
+		#1
+	\end{minipage}
+	\begin{minipage}{0.6\linewidth}%
+		\begin{leftbar}
+			#2
+		\end{leftbar}
+	\end{minipage}
+	\medskip
+}
 
 %%%%% Commandes développeurs %%%%%
 % Charge le fichier texte et l'affiche de manière brute (sans interprétation)
